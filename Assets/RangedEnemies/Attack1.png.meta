@@ -3,7 +3,7 @@ guid: 34c635bd91f133a40980725d5cd14f55
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -125,7 +131,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 9
-      pivot: {x: 0.6656431, y: 0.6416326}
+      pivot: {x: 0.66342044, y: 0.4269743}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,7 +152,7 @@ TextureImporter:
         width: 75
         height: 119
       alignment: 9
-      pivot: {x: 0.6932039, y: 0.64677453}
+      pivot: {x: 0.7144954, y: 0.41337445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +173,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 9
-      pivot: {x: 0.6662801, y: 0.6415714}
+      pivot: {x: 0.6494263, y: 0.38985175}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +194,7 @@ TextureImporter:
         width: 93
         height: 136
       alignment: 9
-      pivot: {x: 0.6924622, y: 0.5096136}
+      pivot: {x: 0.6979928, y: 0.35796064}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +215,7 @@ TextureImporter:
         width: 103
         height: 103
       alignment: 9
-      pivot: {x: 0.55693454, y: 0.6545383}
+      pivot: {x: 0.56678194, y: 0.41014692}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +236,7 @@ TextureImporter:
         width: 110
         height: 108
       alignment: 9
-      pivot: {x: 0.5587928, y: 0.624796}
+      pivot: {x: 0.5581876, y: 0.4084337}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +257,7 @@ TextureImporter:
         width: 128
         height: 116
       alignment: 9
-      pivot: {x: 0.3458128, y: 0.59588075}
+      pivot: {x: 0.33963585, y: 0.36065727}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,12 +273,12 @@ TextureImporter:
       name: Attack1_12
       rect:
         serializedVersion: 2
-        x: 1700
+        x: 1701
         y: 48
         width: 139
         height: 133
       alignment: 9
-      pivot: {x: 0.32302, y: 0.53408694}
+      pivot: {x: 0.31911728, y: 0.3971841}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,24 +301,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack1_8: -897286733
-      Attack1_5: 1091144145
-      Attack1_14: 1098836230
-      Attack1_6: -1702408440
-      Attack1_7: -1783033907
-      Attack1_13: 1791935477
       Attack1_0: -1061429262
-      Attack1_10: -1409383020
-      Attack1_3: 90805480
-      Attack1_2: -38759874
-      Attack1_4: -2083655752
       Attack1_1: -1228207275
-      Attack1_9: 1545501805
+      Attack1_10: -1409383020
       Attack1_11: -364127348
       Attack1_12: 1414250659
-  spritePackingTag: 
+      Attack1_13: 1791935477
+      Attack1_14: 1098836230
+      Attack1_2: -38759874
+      Attack1_3: 90805480
+      Attack1_4: -2083655752
+      Attack1_5: 1091144145
+      Attack1_6: -1702408440
+      Attack1_7: -1783033907
+      Attack1_8: -897286733
+      Attack1_9: 1545501805
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
