@@ -70,7 +70,7 @@ public class EnemyMeleeScript : MonoBehaviour
            if (AttackScript.canDoDamage == true)
            {
              Debug.Log("Hit");
-            PlayerHealthScript.Health = -0.25f;
+            PlayerHealthScript.Health -= 0.25f;
            }
         }
    } 
