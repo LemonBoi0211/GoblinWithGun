@@ -6,7 +6,7 @@ public class EnemyWizardScript : MonoBehaviour
 {
     public Transform Player;
     public float direction;
-    public int Health = 100;
+    public float Health = 1f;
     public float Speed = 5f;
     public float detectionRange = 5f;
     public float knockbackForce = 10f;
@@ -47,7 +47,7 @@ public class EnemyWizardScript : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
-            Health -= 20;
+            Health -= 0.2f;
             Destroy(other.gameObject);
 
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;

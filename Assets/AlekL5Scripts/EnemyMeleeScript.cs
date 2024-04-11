@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyMeleeScript : MonoBehaviour
 {
     public Transform Player;
-    public int Health = 100;
     public float Speed = 5f;
     public float knockbackForce = 10f;
     public Rigidbody2D rb;
@@ -36,10 +35,7 @@ public class EnemyMeleeScript : MonoBehaviour
                 }
             }
 
-            if (Health <= 0)
-            {
-                Destroy(gameObject);
-            }
+         
 
         
     }
@@ -47,7 +43,6 @@ public class EnemyMeleeScript : MonoBehaviour
         {
             if (other.CompareTag("Bullet"))
             {
-                Health -= 20;
                 Destroy(other.gameObject);
                 Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
                 rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
