@@ -9,6 +9,7 @@ public class EnemyMeleeScript : MonoBehaviour
     public float Speed = 5f;
     public float knockbackForce = 10f;
     public Rigidbody2D rb;
+    public Animator Animator;
 
     void FixedUpdate()
     {
@@ -17,9 +18,14 @@ public class EnemyMeleeScript : MonoBehaviour
             float distance = Vector3.Distance(transform.position, Player.position);
             Vector2 direction = (Player.position - transform.position).normalized;
           
-            if (distance > 2)
+            if (distance > 1)
             {
+                Animator.SetBool("IsAttacking", false);
                 rb.AddForce(direction * Speed, ForceMode2D.Force);
+            }
+            else
+            {
+                Animator.SetBool("IsAttacking", true);
             }
         }
 
