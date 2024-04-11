@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 229432909}
   - component: {fileID: 229432911}
   - component: {fileID: 229432912}
+  - component: {fileID: 229432913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -365,6 +366,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &229432913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229432905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fbf0084816db940ac275f379ae36fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
 --- !u!1 &239444830
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +2601,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1117865206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3559391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.805021
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436267049307123100, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889535715875108482, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
+      propertyPath: m_Name
+      value: WizardProjectile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65c9097fefccf2e44a17b9739d166a4e, type: 3}
 --- !u!1 &1117997437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,12 +3198,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 229432908}
-  Health: 100
-  Speed: 16
-  knockbackForce: 2
+  Speed: 80
+  knockbackForce: 10
   rb: {fileID: 1291903844}
   Animator: {fileID: 1291903845}
   AttackScript: {fileID: 614468018}
+  PlayerHealthScript: {fileID: 229432913}
 --- !u!61 &1291903841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3240,7 +3311,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.87, y: 4.05, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 614468017}
@@ -3258,7 +3329,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 10
   m_LinearDrag: 3
   m_AngularDrag: 3
   m_GravityScale: 0
@@ -4724,3 +4795,4 @@ SceneRoots:
   - {fileID: 1113247216}
   - {fileID: 229432908}
   - {fileID: 735973912}
+  - {fileID: 1117865206}

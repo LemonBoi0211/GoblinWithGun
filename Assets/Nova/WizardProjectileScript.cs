@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WizardProjectileScriptNova : MonoBehaviour
+public class WizardProjectileScript : MonoBehaviour
 {
     public float speed = 5f;
     public Rigidbody2D rb;
-   
+    public PlayerHealthScript PlayerHealthScript;
+
+
     void Update()
     {
 
@@ -19,6 +21,7 @@ public class WizardProjectileScriptNova : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Hit");
+            PlayerHealthScript.Health = -0.25f;
         }
     }
 }

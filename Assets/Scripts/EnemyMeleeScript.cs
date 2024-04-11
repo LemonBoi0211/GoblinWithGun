@@ -10,6 +10,7 @@ public class EnemyMeleeScript : MonoBehaviour
     public Rigidbody2D rb;
     public Animator Animator;
     public MeleeAreaOfAttackScript AttackScript;
+    public PlayerHealthScript PlayerHealthScript;
 
     void FixedUpdate()
     {
@@ -56,11 +57,11 @@ public class EnemyMeleeScript : MonoBehaviour
 
             if (Player.position.x < transform.position.x)
             {
-                this.transform.localScale = new Vector3(-1.2f, 1.2f, 1.2f);
+                this.transform.localScale = new Vector3(-1.3f, 1.3f, 1.3f);
             }
             if (Player.position.x >= transform.position.x)
             {
-                this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+                this.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
             }
         }
 
@@ -68,7 +69,8 @@ public class EnemyMeleeScript : MonoBehaviour
         {
            if (AttackScript.canDoDamage == true)
            {
-            Debug.Log("Hit");
+             Debug.Log("Hit");
+            PlayerHealthScript.Health = -0.25f;
            }
         }
    } 
