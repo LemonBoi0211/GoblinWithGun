@@ -5,17 +5,12 @@ using UnityEngine;
 public class PlayerHealthScript : MonoBehaviour
 {
     public float Health = 1f;
-    void Start()
-    {
-
-    }
 
     void Update()
     {
         if (Health <= 0)
         {
-            Destroy(gameObject);
+            Debug.Log("Dead");
         }
     }
-   
 }

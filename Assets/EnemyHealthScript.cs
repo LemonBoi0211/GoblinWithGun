@@ -24,6 +24,7 @@ public class EnemyHealthScript : MonoBehaviour
         {
             if (other.CompareTag("Bullet"))
             {
+                Destroy(other.gameObject);
                 Health -= 0.2f;
             }
         }

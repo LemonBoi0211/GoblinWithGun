@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     public float speed = 20f;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
