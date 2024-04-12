@@ -17,32 +17,37 @@ public class CollectableSystemNova : MonoBehaviour
     private int collectableDCount = 0;
     private int collectableECount = 0;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CollectableA"))
         {
             collectableACount++;
             UpdateText(collectableAText, collectableACount);
+            Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableB"))
         {
             collectableBCount++;
             UpdateText(collectableBText, collectableBCount);
+            Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableC"))
         {
             collectableCCount++;
             UpdateText(collectableCText, collectableCCount);
+            Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableD"))
         {
             collectableDCount++;
             UpdateText(collectableDText, collectableDCount);
+            Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableE"))
         {
             collectableECount++;
             UpdateText(collectableEText, collectableECount);
+            Destroy(other.gameObject);
         }
     }
 
