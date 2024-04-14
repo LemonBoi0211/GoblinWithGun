@@ -15,4 +15,12 @@ public class BulletScript : MonoBehaviour
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

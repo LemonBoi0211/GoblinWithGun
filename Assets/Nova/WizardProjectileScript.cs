@@ -30,5 +30,10 @@ public class WizardProjectileScript : MonoBehaviour
             PlayerHealthScript.Health -= 0.25f;
             Destroy(gameObject);
         }
+
+        if (other.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 }

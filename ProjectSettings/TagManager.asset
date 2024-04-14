@@ -10,6 +10,7 @@ TagManager:
   - CollectableC
   - CollectableD
   - CollectableE
+  - Wall
   layers:
   - Default
   - TransparentFX
