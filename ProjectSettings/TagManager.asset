@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - CollectableA
+  - CollectableB
+  - CollectableC
+  - CollectableD
+  - CollectableE
   layers:
   - Default
   - TransparentFX
@@ -12,8 +17,8 @@ TagManager:
   - Enemies
   - Water
   - UI
-  - 
-  - 
+  - AttackArea
+  - Bullet
   - 
   - 
   - 

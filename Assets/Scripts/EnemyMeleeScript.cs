@@ -1,16 +1,16 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMeleeScript : MonoBehaviour
 {
     public Transform Player;
-    public int Health = 100;
     public float Speed = 5f;
     public float knockbackForce = 10f;
     public Rigidbody2D rb;
     public Animator Animator;
     public MeleeAreaOfAttackScript AttackScript;
+    public PlayerHealthScript PlayerHealthScript;
 
     void FixedUpdate()
     {
@@ -36,10 +36,7 @@ public class EnemyMeleeScript : MonoBehaviour
                 }
             }
 
-            if (Health <= 0)
-            {
-                Destroy(gameObject);
-            }
+         
 
         
     }
@@ -47,7 +44,6 @@ public class EnemyMeleeScript : MonoBehaviour
         {
             if (other.CompareTag("Bullet"))
             {
-                Health -= 20;
                 Destroy(other.gameObject);
                 Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
                 rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
@@ -61,11 +57,11 @@ public class EnemyMeleeScript : MonoBehaviour
 
             if (Player.position.x < transform.position.x)
             {
-                this.transform.localScale = new Vector3(-1.2f, 1.2f, 1.2f);
+                this.transform.localScale = new Vector3(-1.3f, 1.3f, 1.3f);
             }
             if (Player.position.x >= transform.position.x)
             {
-                this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+                this.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
             }
         }
 
@@ -73,7 +69,8 @@ public class EnemyMeleeScript : MonoBehaviour
         {
            if (AttackScript.canDoDamage == true)
            {
-            Debug.Log("Hit");
+             Debug.Log("Hit");
+            PlayerHealthScript.Health -= 0.25f;
            }
         }
    } 
