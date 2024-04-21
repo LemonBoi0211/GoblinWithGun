@@ -2097,9 +2097,17 @@ MonoBehaviour:
   Player: {fileID: 229432908}
   direction: 0
   Speed: 5
+  Health: 100
   detectionRange: 30
   knockbackForce: 1
   rb: {fileID: 1037508425}
+  consumables: []
+  randonConsumable: 0
+  consumableA: {fileID: 5150894352987102823, guid: beca5178a9e4e2d44a11ff5b43de970b, type: 3}
+  consumableB: {fileID: 2735725387779537384, guid: b75b2a5ea8cd2244bb4ea6d479ce601d, type: 3}
+  consumableC: {fileID: 1300347891575746889, guid: 4da90d194f3a23c4bb9b7b29b4a20554, type: 3}
+  consumableD: {fileID: 8660140571892065185, guid: b149a2877ce64aa4783be7722594281f, type: 3}
+  consumableE: {fileID: 8065601777810311164, guid: 88e1fbc86048b5240a525c6a31b27875, type: 3}
 --- !u!61 &1037508420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2132,12 +2140,12 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: -0.059072956}
+  m_Offset: {x: 0, y: -0.059072956}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.56678194, y: 0.41014692}
-    oldSize: {x: 1.03, y: 1.03}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.57, y: 0.86}
+    newSize: {x: 0.57, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2177,12 +2185,12 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: -0.31566972}
+  m_Offset: {x: 0, y: -0.31566972}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.56678194, y: 0.41014692}
-    oldSize: {x: 1.03, y: 1.03}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.57, y: 0.86}
+    newSize: {x: 0.57, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2231,12 +2239,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2083655752, guid: 34c635bd91f133a40980725d5cd14f55, type: 3}
+  m_Sprite: {fileID: -1793868992, guid: e3c84c8493ae6d14092584e4a79cf191, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.57, y: 0.86}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3286,11 +3294,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 229432908}
   Speed: 100
+  Health: 100
   knockbackForce: 10
   rb: {fileID: 1291903844}
   Animator: {fileID: 1291903845}
   AttackScript: {fileID: 614468018}
   PlayerHealthScript: {fileID: 229432913}
+  consumables: []
+  randonConsumable: 0
+  consumableA: {fileID: 0}
+  consumableB: {fileID: 0}
+  consumableC: {fileID: 0}
+  consumableD: {fileID: 0}
+  consumableE: {fileID: 0}
 --- !u!61 &1291903841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3752,9 +3768,17 @@ MonoBehaviour:
   Player: {fileID: 229432908}
   direction: 0
   Speed: 5
+  Health: 100
   detectionRange: 30
   knockbackForce: 1
   rb: {fileID: 1472574205}
+  consumables: []
+  randonConsumable: 0
+  consumableA: {fileID: 5150894352987102823, guid: beca5178a9e4e2d44a11ff5b43de970b, type: 3}
+  consumableB: {fileID: 2735725387779537384, guid: b75b2a5ea8cd2244bb4ea6d479ce601d, type: 3}
+  consumableC: {fileID: 1300347891575746889, guid: 4da90d194f3a23c4bb9b7b29b4a20554, type: 3}
+  consumableD: {fileID: 8660140571892065185, guid: b149a2877ce64aa4783be7722594281f, type: 3}
+  consumableE: {fileID: 8065601777810311164, guid: 88e1fbc86048b5240a525c6a31b27875, type: 3}
 --- !u!61 &1472574207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3787,12 +3811,12 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: -0.057064995}
+  m_Offset: {x: 0, y: -0.057064995}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.56678194, y: 0.41014692}
-    oldSize: {x: 1.03, y: 1.03}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.57, y: 0.86}
+    newSize: {x: 0.57, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3832,12 +3856,12 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: -0.32691357}
+  m_Offset: {x: 0, y: -0.32691357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.56678194, y: 0.41014692}
-    oldSize: {x: 1.03, y: 1.03}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.57, y: 0.86}
+    newSize: {x: 0.57, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3886,12 +3910,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2083655752, guid: 34c635bd91f133a40980725d5cd14f55, type: 3}
+  m_Sprite: {fileID: -2141722263, guid: 5e2ae41a31967864fa603be50f4b2071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.57, y: 0.86}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3923,7 +3947,7 @@ Animator:
   m_GameObject: {fileID: 1472574204}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87f009b7affaf084d8f3b2043c356ef8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41262fd9104ede74e88ed39301628bdd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5174,11 +5198,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 229432908}
   Speed: 16
+  Health: 100
   knockbackForce: 2
   rb: {fileID: 1900220089}
   Animator: {fileID: 1900220088}
   AttackScript: {fileID: 1455134846}
   PlayerHealthScript: {fileID: 229432913}
+  consumables: []
+  randonConsumable: 0
+  consumableA: {fileID: 0}
+  consumableB: {fileID: 0}
+  consumableC: {fileID: 0}
+  consumableD: {fileID: 0}
+  consumableE: {fileID: 0}
 --- !u!61 &1900220092
 BoxCollider2D:
   m_ObjectHideFlags: 0

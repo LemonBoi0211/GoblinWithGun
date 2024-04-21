@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 5ac30a9c176684d4d8c930847440361b
+guid: e3c84c8493ae6d14092584e4a79cf191
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -33,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,41 +90,18 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: 000_0
       rect:
         serializedVersion: 2
-        x: 82
-        y: 49
+        x: 1
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -131,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc70002eb22d3d459eec7a2042e0ccf
-      internalID: -1086830327
+      spriteID: cd34569be5bef0044aaff9bed9a50b61
+      internalID: 1579011339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: 000_1
       rect:
         serializedVersion: 2
-        x: 313
-        y: 49
+        x: 232
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -152,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ba7560294300d40a5ea9c7d726bcd1
-      internalID: 1641687044
+      spriteID: 7e8b9eed721f7c74590a0d2bdeafd9cc
+      internalID: 93373128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: 000_2
       rect:
         serializedVersion: 2
-        x: 544
-        y: 49
+        x: 463
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -173,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f685b6a330144b47bcfd6c4fb35f7f3
-      internalID: -688763144
+      spriteID: 8851d73d8353bf04a84abeed55201630
+      internalID: 939482631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: 000_3
       rect:
         serializedVersion: 2
-        x: 775
-        y: 49
+        x: 694
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -194,18 +174,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ff61d56ea825c44e971c7d3e89422ac
-      internalID: -41391314
+      spriteID: 35085b7253f7c1b44858c8bc6c82a30f
+      internalID: -1793868992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: 000_4
       rect:
         serializedVersion: 2
-        x: 1006
-        y: 49
+        x: 925
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -215,18 +195,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3610d17186d6f4fb343460cb445ece
-      internalID: -1268305319
+      spriteID: 6e506329dd598c847899d48bf00abbf8
+      internalID: 731537823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: 000_5
       rect:
         serializedVersion: 2
-        x: 1237
-        y: 49
+        x: 1156
+        y: 1
         width: 57
         height: 86
       alignment: 0
@@ -236,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e729d4bc3cbf22f4d9faaed1f6aff8cc
-      internalID: 261517347
+      spriteID: 35df2e7c57f8a8d40ba5de9e49865c9a
+      internalID: -844145418
       vertices: []
       indices: 
       edges: []
@@ -253,15 +233,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_4: -1268305319
-      Idle_1: 1641687044
-      Idle_3: -41391314
-      Idle_5: 261517347
-      Idle_0: -1086830327
-      Idle_2: -688763144
-  spritePackingTag: 
+      000_0: 1579011339
+      000_1: 93373128
+      000_2: 939482631
+      000_3: -1793868992
+      000_4: 731537823
+      000_5: -844145418
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
