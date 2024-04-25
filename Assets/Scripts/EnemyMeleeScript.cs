@@ -98,7 +98,7 @@ public class EnemyMeleeScript : MonoBehaviour
 
         if (Health <= 0.1)
         {
-
+            Instantiate(consumables[4], transform.position, Quaternion.identity);
             randonConsumable = Random.Range(6, 10);
 
             if (randonConsumable <= 5)
@@ -121,10 +121,7 @@ public class EnemyMeleeScript : MonoBehaviour
             {
                 Instantiate(consumables[3], transform.position, Quaternion.identity);
             }
-            else if (randonConsumable == 10)
-            {
-                Instantiate(consumables[4], transform.position, Quaternion.identity);
-            }
+            
             Destroy(gameObject);
         }
 

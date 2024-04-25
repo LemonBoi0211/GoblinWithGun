@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CollectableSystemNova : MonoBehaviour
 {
+    public PlayerHealthScript currentHP;
     public Text collectableAText;
     public Text collectableBText;
     public Text collectableCText;
@@ -23,6 +24,7 @@ public class CollectableSystemNova : MonoBehaviour
         {
             collectableACount++;
             UpdateText(collectableAText, collectableACount);
+            currentHP.Health = 1f;
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableB"))
