@@ -48,6 +48,7 @@ public class EnemyWizardScript : MonoBehaviour
         if (Health <= 0)
         {
             Destroy(gameObject);
+            Instantiate(consumables[4], transform.position, Quaternion.identity);
 
             randonConsumable = Random.Range(6, 10);
 
@@ -71,10 +72,7 @@ public class EnemyWizardScript : MonoBehaviour
             {
                 Instantiate(consumables[3], transform.position, Quaternion.identity);
             }
-            else if (randonConsumable == 10)
-            {
-                Instantiate(consumables[4], transform.position, Quaternion.identity);
-            }
+            
         }
 
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Combined");
+        SceneManager.LoadScene(1);
     }
 }
 
