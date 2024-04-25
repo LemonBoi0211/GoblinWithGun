@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GunScriptNova : MonoBehaviour
+public class RifleGunScript : MonoBehaviour
 {
 
     public Transform Player;

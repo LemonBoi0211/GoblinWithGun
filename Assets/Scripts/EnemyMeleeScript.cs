@@ -44,38 +44,7 @@ public class EnemyMeleeScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Health <= 0)
-        {
-            Destroy(gameObject);
-
-            randonConsumable = Random.Range(6, 10);
-
-            if (randonConsumable <= 5)
-            {
-
-            }
-            else if (randonConsumable == 6)
-            {
-                Instantiate(consumables[0], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 7)
-            {
-                Instantiate(consumables[1], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 8)
-            {
-                Instantiate(consumables[2], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 9)
-            {
-                Instantiate(consumables[3], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 10)
-            {
-                Instantiate(consumables[4], transform.position, Quaternion.identity);
-            }
-        }
-
+        
         if (Player != null)
             {
                 float distance = Vector3.Distance(transform.position, Player.position);
@@ -125,9 +94,43 @@ public class EnemyMeleeScript : MonoBehaviour
             {
                 this.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
             }
+
+
+        if (Health <= 0.1)
+        {
+
+            randonConsumable = Random.Range(6, 10);
+
+            if (randonConsumable <= 5)
+            {
+
+            }
+            else if (randonConsumable == 6)
+            {
+                Instantiate(consumables[0], transform.position, Quaternion.identity);
+            }
+            else if (randonConsumable == 7)
+            {
+                Instantiate(consumables[1], transform.position, Quaternion.identity);
+            }
+            else if (randonConsumable == 8)
+            {
+                Instantiate(consumables[2], transform.position, Quaternion.identity);
+            }
+            else if (randonConsumable == 9)
+            {
+                Instantiate(consumables[3], transform.position, Quaternion.identity);
+            }
+            else if (randonConsumable == 10)
+            {
+                Instantiate(consumables[4], transform.position, Quaternion.identity);
+            }
+            Destroy(gameObject);
         }
 
-        void Hit()
+    }
+
+    void Hit()
         {
            if (AttackScript.canDoDamage == true)
            {
