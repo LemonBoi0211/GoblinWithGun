@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RifleGunScript : MonoBehaviour
+public class RPGScript : MonoBehaviour
 {
-
     public Transform Player;
     public GameObject Bullet;
     public Transform FirePoint;
@@ -19,7 +18,7 @@ public class RifleGunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (WeaponManagerScript.WeaponSelected == 2)
+        if (WeaponManagerScript.WeaponSelected == 3)
         {
             //Look a mouse
             Vector3 mousePos = Input.mousePosition;
