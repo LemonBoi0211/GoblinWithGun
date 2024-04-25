@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GamerTagArray : MonoBehaviour
 {
+
+
     void Start()
     {
         string[] gamerTags =
@@ -42,12 +45,13 @@ public class GamerTagArray : MonoBehaviour
             "GeekyGoblin",
             "VenomFury",
             "ShiningGoblin",
-            "GoblinBoss",
+            "VintageTanks",
             "ArmoredPixels",
             "VectorHater",
             "SparkingLilac67",
             "DarkJester51",
-            "WolfPureBlood"
+            "WolfPureBlood",
+            "Feedpompano"
         };
     }
 
