@@ -1,23 +1,26 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class MainMenu : MonoBehaviour 
+public class MainMenu : MonoBehaviour
 {
 
-    
-   
     void Start()
     {
-        
+
     }
-        public void Quit()
-  
-   
+
+
+
+    public void Quit()
     {
-        
         Debug.Log("Quit!");
-       Application.Quit();
-   
-   }
+        Application.Quit();
+
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("Combined");
+    }
 }
 
