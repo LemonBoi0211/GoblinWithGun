@@ -11,6 +11,7 @@ TagManager:
   - CollectableD
   - CollectableE
   - Wall
+  - CameraTrigger
   layers:
   - Default
   - TransparentFX
