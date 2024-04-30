@@ -9,17 +9,38 @@ public class RPGScript : MonoBehaviour
     public Transform FirePoint;
     public WeaponManagerScript WeaponManagerScript;
     public SpriteRenderer Sprite;
+    public bool CanFire = true;
+    public float Timer;
+    public CollectableSystem AmmoScript;
     // Use this for initialization
     void Start()
     {
-
+        Timer = 3f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Timer -= Time.deltaTime;
+
         if (WeaponManagerScript.WeaponSelected == 3)
         {
+            if (AmmoScript.RocketAmmo > 0)
+            {
+                if (CanFire == true)
+                {
+                    if (Input.GetKeyDown(KeyCode.Mouse0))
+                    {
+                        Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
+                        Timer = 0.5f;
+                        AmmoScript.RocketAmmo--;
+                    }
+                }
+            }
+            else
+            {
+                Timer = 0.5f;
+            }
             //Look a mouse
             Vector3 mousePos = Input.mousePosition;
             Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
@@ -29,10 +50,7 @@ public class RPGScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             Sprite.enabled = true;
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
-            }
+
 
 
             this.transform.position = Player.position;
@@ -42,5 +60,15 @@ public class RPGScript : MonoBehaviour
         {
             Sprite.enabled = false;
         }
+
+        if (Timer > 0)
+        {
+            CanFire = false;
+        }
+        else
+        {
+            CanFire = true;
+        }
     }
 }
+

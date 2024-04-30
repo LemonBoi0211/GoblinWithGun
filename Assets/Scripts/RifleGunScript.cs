@@ -10,19 +10,40 @@ public class RifleGunScript : MonoBehaviour
     public Transform FirePoint;
     public WeaponManagerScript WeaponManagerScript;
     public SpriteRenderer Sprite;
+    public bool CanFire = true;
+    public float Timer; 
+    public CollectableSystem AmmoScript;
     // Use this for initialization
     void Start()
     {
-
+        Timer = 0.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Timer -= Time.deltaTime;
+     
         if (WeaponManagerScript.WeaponSelected == 2)
         {
-            //Look a mouse
-            Vector3 mousePos = Input.mousePosition;
+            if (AmmoScript.RifleAmmo > 0)
+            {
+                if (CanFire == true)
+                {
+                    if (Input.GetKeyDown(KeyCode.Mouse0))
+                    {
+                        Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
+                        Timer = 0.5f;
+                        AmmoScript.RifleAmmo--;
+                    }
+                }
+            }
+            else
+            {
+                Timer = 0.5f;
+            }
+                //Look a mouse
+                Vector3 mousePos = Input.mousePosition;
             Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
             mousePos.x = mousePos.x - objectPos.x;
             mousePos.y = mousePos.y - objectPos.y;
@@ -30,18 +51,24 @@ public class RifleGunScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             Sprite.enabled = true;
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
-            }
+            
 
-
+       
             this.transform.position = Player.position;
 
         }
         else
         {
             Sprite.enabled = false;
+        }
+
+        if (Timer > 0) 
+        {
+            CanFire = false;
+        }
+        else
+        {
+            CanFire = true;
         }
     }
 }

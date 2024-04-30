@@ -5,17 +5,16 @@ using UnityEngine;
 public class EnemyWizardScript : MonoBehaviour
 {
     //Remove Health if it ever cause problems with the other health script.
-
+    public float Health = 1f;
     public Transform Player;
     public float direction;
     public float Speed = 5f;
-    public int Health = 100;
     public float detectionRange = 5f;
     public float knockbackForce = 10f;
     public Rigidbody2D rb;
     public GameObject[] consumables;
     public int randonConsumable;
-
+    public float knockbackForceRifle = 10f;
     public GameObject consumableA;
     public GameObject consumableB;
     public GameObject consumableC;
@@ -24,6 +23,8 @@ public class EnemyWizardScript : MonoBehaviour
 
     void Start()
     {
+        Health = 1f;   
+        knockbackForce = knockbackForce * 2;
         consumables = new GameObject[5];
         consumables[0] = consumableA;
         consumables[1] = consumableB;
@@ -45,7 +46,9 @@ public class EnemyWizardScript : MonoBehaviour
 
     void Update()
     {
-        if (Health <= 0)
+      
+
+        if (Health <= 0.1)
         {
             Destroy(gameObject);
             Instantiate(consumables[4], transform.position, Quaternion.identity);
@@ -96,13 +99,24 @@ public class EnemyWizardScript : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
-            Health -= 20;
             Destroy(other.gameObject);
+            Health -= 0.2f;
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         }
+
+        if (other.CompareTag("BulletRifle"))
+        {
+            Destroy(other.gameObject);
+            Health -= 0.5f;
+            Destroy(other.gameObject);
+            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
+            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+
+        }
     }
 
-
-
 }
+
+
+

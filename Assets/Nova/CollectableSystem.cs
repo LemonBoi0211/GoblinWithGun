@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectableSystemNova : MonoBehaviour
+public class CollectableSystem : MonoBehaviour
 {
     public PlayerHealthScript currentHP;
     public Text collectableAText;
@@ -11,44 +11,32 @@ public class CollectableSystemNova : MonoBehaviour
     public Text collectableCText;
     public Text collectableDText;
     public Text collectableEText;
-
-    private int collectableACount = 0;
-    private int collectableBCount = 0;
-    private int collectableCCount = 0;
-    private int collectableDCount = 0;
-    private int collectableECount = 0;
+    public int RifleAmmo = 5;
+    public int RocketAmmo = 5;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CollectableA"))
-        {
-            collectableACount++;
-            UpdateText(collectableAText, collectableACount);
+        {  
             currentHP.Health = 1f;
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableB"))
         {
-            collectableBCount++;
-            UpdateText(collectableBText, collectableBCount);
+            RifleAmmo++;        
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableC"))
         {
-            collectableCCount++;
-            UpdateText(collectableCText, collectableCCount);
+            RocketAmmo++;    
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableD"))
-        {
-            collectableDCount++;
-            UpdateText(collectableDText, collectableDCount);
+        {          
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableE"))
-        {
-            collectableECount++;
-            UpdateText(collectableEText, collectableECount);
+        {        
             Destroy(other.gameObject);
         }
     }

@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class EnemyMeleeScript : MonoBehaviour
 {
+    public float Health = 1f;
     public Transform Player;
     public float Speed = 5f;
-    public int Health = 100;
     public float knockbackForce = 10f;
+    public float knockbackForceRifle = 10f;
     public Rigidbody2D rb;
     public Animator Animator;
     public MeleeAreaOfAttackScript AttackScript;
     public PlayerHealthScript PlayerHealthScript;
     public GameObject[] consumables;
     public int randonConsumable;
-
+    public EnemyHealthScript healthScript;
     public GameObject consumableA;
     public GameObject consumableB;
     public GameObject consumableC;
@@ -24,6 +25,8 @@ public class EnemyMeleeScript : MonoBehaviour
 
     void Start()
     {
+        Health = 1f;
+        knockbackForce = knockbackForce * 2;
         consumables = new GameObject[5];
         consumables[0] = consumableA;
         consumables[1] = consumableB;
@@ -74,16 +77,27 @@ public class EnemyMeleeScript : MonoBehaviour
         {
             if (other.CompareTag("Bullet"))
             {
-            Health -= 20;
-            Destroy(other.gameObject);
+               Destroy(other.gameObject);
+               Health -= 0.2f;            
                 Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
                 rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
             }
+
+        if (other.CompareTag("BulletRifle"))
+        {
+            Destroy(other.gameObject);
+            Health -= 0.5f;
+            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
+            rb.AddForce(knockbackDirection * knockbackForce , ForceMode2D.Impulse);
+
         }
+    }
 
         private void Update()
         {
+         
+
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (Player.position.x < transform.position.x)
@@ -132,7 +146,7 @@ public class EnemyMeleeScript : MonoBehaviour
            if (AttackScript.canDoDamage == true)
            {
              Debug.Log("Hit");
-            PlayerHealthScript.Health -= 0.25f;
+             PlayerHealthScript.Health -= 0.25f;
            }
         }
    } 

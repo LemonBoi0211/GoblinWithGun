@@ -12,6 +12,8 @@ TagManager:
   - CollectableE
   - Wall
   - CameraTrigger
+  - BulletRifle
+  - Rocket
   layers:
   - Default
   - TransparentFX
