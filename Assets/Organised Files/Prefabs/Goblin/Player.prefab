@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1697903822603193942}
   - component: {fileID: 687145304340651016}
   - component: {fileID: 7538890900778438191}
-  - component: {fileID: 2144742174828926217}
   - component: {fileID: 2115429962771268197}
   - component: {fileID: 6254771494883621892}
   - component: {fileID: 5692189937731943175}
@@ -33,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8776254394497733241}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.9185, z: 0}
+  m_LocalPosition: {x: 0.15, y: 0.34, z: 0}
   m_LocalScale: {x: 1.8, y: 1.37088, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138,7 +137,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014797762, y: -0.0023182407}
+  m_Offset: {x: -0.014797762, y: -0.017835952}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5857919, y: 0.4999354}
@@ -149,52 +148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2579544, y: 0.3553939}
-  m_EdgeRadius: 0
---- !u!61 &2144742174828926217
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8776254394497733241}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.013452556, y: -0.13990618}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5857919, y: 0.4999354}
-    oldSize: {x: 0.29, y: 0.38}
-    newSize: {x: 0.29, y: 0.38}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.2590927, y: 0.07699722}
+  m_Size: {x: 0.2579544, y: 0.32435846}
   m_EdgeRadius: 0
 --- !u!50 &2115429962771268197
 Rigidbody2D:
@@ -269,8 +223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20ec5395bd0b1438b22bce31967606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHP: {fileID: 5692189937731943175}
   collectableAText: {fileID: 0}
   collectableBText: {fileID: 0}
   collectableCText: {fileID: 0}
   collectableDText: {fileID: 0}
   collectableEText: {fileID: 0}
+  RifleAmmo: 5
+  RocketAmmo: 5
