@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 8738903604675952638}
   m_Layer: 3
   m_Name: EnemyWizard
-  m_TagString: Untagged
+  m_TagString: WizardEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &5217741966405711077
@@ -243,15 +243,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edb70947c1ae584689fbcf7e671edbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 100
   Player: {fileID: 0}
   direction: 0
   Speed: 5
-  Health: 100
   detectionRange: 30
   knockbackForce: 1
   rb: {fileID: 7757648633645748608}
   consumables: []
   randonConsumable: 0
+  knockbackForceRifle: 10
   consumableA: {fileID: 5150894352987102823, guid: beca5178a9e4e2d44a11ff5b43de970b, type: 3}
   consumableB: {fileID: 2735725387779537384, guid: b75b2a5ea8cd2244bb4ea6d479ce601d, type: 3}
   consumableC: {fileID: 1300347891575746889, guid: 4da90d194f3a23c4bb9b7b29b4a20554, type: 3}

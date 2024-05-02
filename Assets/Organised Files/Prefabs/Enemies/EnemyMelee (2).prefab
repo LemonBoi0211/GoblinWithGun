@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 156641035410587698}
   m_Layer: 0
   m_Name: EnemyMelee (2)
-  m_TagString: Untagged
+  m_TagString: MeleeEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &4365409905046673189
@@ -282,16 +282,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa27cabd11d437c4f99c663db1d5e42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 100
   Player: {fileID: 0}
   Speed: 16
-  Health: 100
   knockbackForce: 2
+  knockbackForceRifle: 10
   rb: {fileID: 8733602783284771797}
   Animator: {fileID: 3013565699006267779}
   AttackScript: {fileID: 2382279018933099315}
   PlayerHealthScript: {fileID: 0}
   consumables: []
   randonConsumable: 0
+  healthScript: {fileID: 0}
   consumableA: {fileID: 0}
   consumableB: {fileID: 0}
   consumableC: {fileID: 0}
