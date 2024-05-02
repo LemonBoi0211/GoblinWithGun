@@ -28,6 +28,7 @@ public class BulletScript : MonoBehaviour
         if(IsRocket == true)
         {
             Instantiate(Explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 }

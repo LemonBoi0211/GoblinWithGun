@@ -10,6 +10,7 @@ public class GlitchedGunScript : MonoBehaviour
     public Transform FirePoint;
     public WeaponManagerScript WeaponManagerScript;
     public SpriteRenderer Sprite;
+    public bool IsFiring;
 
     // Use this for initialization
     void Start()
@@ -34,6 +35,7 @@ public class GlitchedGunScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
+                IsFiring = true;
             }
         }
         else

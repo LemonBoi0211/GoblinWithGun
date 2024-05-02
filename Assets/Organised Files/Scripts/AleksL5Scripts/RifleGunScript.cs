@@ -13,6 +13,7 @@ public class RifleGunScript : MonoBehaviour
     public bool CanFire = true;
     public float Timer; 
     public CollectableSystem AmmoScript;
+    public bool IsFiring;
     // Use this for initialization
     void Start()
     {
@@ -35,6 +36,7 @@ public class RifleGunScript : MonoBehaviour
                         Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
                         Timer = 0.5f;
                         AmmoScript.RifleAmmo--;
+                        IsFiring = true;
                     }
                 }
             }

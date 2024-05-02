@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class ExplosionScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public CamerShakeScript CameraShakeScript;
+    public GameObject Camera;
+    private void Awake()
+    {
+        Camera = GameObject.FindWithTag("MainCamera");
+        CameraShakeScript = Camera.GetComponent<CamerShakeScript>();
+    }
     void Start()
     {
+        CameraShakeScript.shakeDuration = 0.1f;
+        CameraShakeScript.rotationIntensity = 3f;
         Destroy(gameObject, 0.3f);
     }
 
