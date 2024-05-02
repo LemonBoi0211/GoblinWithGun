@@ -117,7 +117,7 @@ public class EnemyWizardScript : MonoBehaviour
 
         if (other.CompareTag("Rocket"))
         {
-            Health -= 0.8f;
+            Health -= 0.4f;
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
