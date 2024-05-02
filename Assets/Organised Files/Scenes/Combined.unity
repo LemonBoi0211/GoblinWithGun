@@ -4164,8 +4164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910cfecf2374082418c92e05906e36c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RifleAmmo: 5
-  RocketAmmo: 5
+  Text: {fileID: 563151940}
+  PlayerAmmoScript: {fileID: 1203764171}
+  weaponManagerScript: {fileID: 542213005}
 --- !u!1 &565688298
 GameObject:
   m_ObjectHideFlags: 0
