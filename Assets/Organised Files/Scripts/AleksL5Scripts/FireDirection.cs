@@ -7,11 +7,15 @@ public class FireDirection : MonoBehaviour
     public Transform player;
     public float countdownTime = 10f;
     public float currentCountdown;
-    public GameObject Projectile;
+    GameObject Projectile;
     public Animator WizardAnimator;
     public float FireTime;
 
+    void Awake()
+    {
+        Projectile = GameObject.FindGameObjectWithTag("WizardProjectile");
 
+    }
 
     private void Start()
     {

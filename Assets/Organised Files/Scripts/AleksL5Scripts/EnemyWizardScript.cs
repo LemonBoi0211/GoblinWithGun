@@ -6,7 +6,6 @@ public class EnemyWizardScript : MonoBehaviour
 {
     //Remove Health if it ever cause problems with the other health script.
     public float Health = 1f;
-    public Transform Player;
     public float direction;
     public float Speed = 5f;
     public float detectionRange = 5f;
@@ -20,6 +19,21 @@ public class EnemyWizardScript : MonoBehaviour
     public GameObject consumableC;
     public GameObject consumableD;
     public GameObject consumableE;
+    GameObject player;
+    Transform playerTransform;
+
+    void Awake()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player.GetComponent<Transform>();
+        consumableA = GameObject.FindGameObjectWithTag("CollectableA");
+        consumableB = GameObject.FindGameObjectWithTag("CollectableB");
+        consumableC = GameObject.FindGameObjectWithTag("CollectableC");
+        consumableD = GameObject.FindGameObjectWithTag("CollectableD");
+        consumableE = GameObject.FindGameObjectWithTag("CollectableE");
+    }
+
 
     void Start()
     {
@@ -80,11 +94,11 @@ public class EnemyWizardScript : MonoBehaviour
 
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Player.position.x < transform.position.x)
+        if (playerTransform.position.x < transform.position.x)
         {
             this.transform.localScale = new Vector3(-1.2f, 1.2f, 1.2f);
         }
-        if (Player.position.x >= transform.position.x)
+        if (playerTransform.position.x >= transform.position.x)
         {
             this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
         }
