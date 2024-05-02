@@ -15,7 +15,7 @@ public class RPGScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Timer = 3f;
+        Timer = 0f;
     }
 
     // Update is called once per frame

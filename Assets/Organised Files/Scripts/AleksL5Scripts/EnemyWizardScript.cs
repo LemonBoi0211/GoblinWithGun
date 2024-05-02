@@ -114,6 +114,14 @@ public class EnemyWizardScript : MonoBehaviour
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
         }
+
+        if (other.CompareTag("Rocket"))
+        {
+            Health -= 0.8f;
+            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
+            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+
+        }
     }
 
 }

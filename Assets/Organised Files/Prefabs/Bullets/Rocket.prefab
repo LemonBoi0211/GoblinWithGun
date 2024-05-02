@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1608543861728246453}
   m_Layer: 7
   m_Name: Rocket
-  m_TagString: Rocket
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  IsRocket: 1
+  Explosion: {fileID: 6072221157609459412, guid: fe448b108d07fd049a8d1b30693e7f25, type: 3}
 --- !u!50 &3465130373977996939
 Rigidbody2D:
   serializedVersion: 4

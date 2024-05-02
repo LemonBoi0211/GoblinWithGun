@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2367363492997723039}
   - component: {fileID: -458601634903633920}
   - component: {fileID: 8218083421786675121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RifleAmmo
   m_TagString: CollectableB
   m_Icon: {fileID: 0}

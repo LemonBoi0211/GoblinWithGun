@@ -5,6 +5,8 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     public float speed = 20f;
+    public bool IsRocket;
+    public GameObject Explosion;
     void Start()
     {
 
@@ -21,6 +23,11 @@ public class BulletScript : MonoBehaviour
         if(other.tag == "Wall")
         {
             Destroy(gameObject);
+        }
+
+        if(IsRocket == true)
+        {
+            Instantiate(Explosion, transform.position, transform.rotation);
         }
     }
 }

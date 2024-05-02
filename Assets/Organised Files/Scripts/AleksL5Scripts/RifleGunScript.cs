@@ -16,7 +16,7 @@ public class RifleGunScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Timer = 0.5f;
+        Timer = 0f;
     }
 
     // Update is called once per frame
