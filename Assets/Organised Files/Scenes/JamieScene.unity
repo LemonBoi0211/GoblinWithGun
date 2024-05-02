@@ -433,7 +433,7 @@ MonoBehaviour:
   m_text: GoblinwithaGun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
-  m_sharedMaterial: {fileID: 6987854758011506648, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_sharedMaterial: {fileID: 1335809400806743061, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
-  m_sharedMaterial: {fileID: 6987854758011506648, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_sharedMaterial: {fileID: 1335809400806743061, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
-  m_sharedMaterial: {fileID: 6987854758011506648, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_sharedMaterial: {fileID: 1335809400806743061, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
