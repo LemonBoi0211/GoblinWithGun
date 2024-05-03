@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEditor;
 using UnityEngine;
+using TMPro;
 
 public class PickNameOnStart : MonoBehaviour
 {
+    public TMP_Text nameText;
+
     //Array of names
     string[] gamerTags =
         {
@@ -59,5 +62,7 @@ public class PickNameOnStart : MonoBehaviour
         int maxSize = gamerTags.Length;
         string selectedName = gamerTags[Random.Range(0, maxSize)];
         Debug.Log(selectedName);
+
+        nameText.text = selectedName;
     }
 }
