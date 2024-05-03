@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.3308427, y: 0.13775694, z: 0}
-  m_LocalScale: {x: 0.16321254, y: 0.07504025, z: 0.07504025}
+  m_LocalScale: {x: 0.16321254, y: 0.022512076, z: 0.07504025}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: c93d03ed4f375b74aa57a2ce7526e68b, type: 3}
-  m_Color: {r: 1, g: 0.92589796, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9848872, b: 0.7971698, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  IsRocket: 0
+  Explosion: {fileID: 0}
 --- !u!50 &3465130373977996939
 Rigidbody2D:
   serializedVersion: 4

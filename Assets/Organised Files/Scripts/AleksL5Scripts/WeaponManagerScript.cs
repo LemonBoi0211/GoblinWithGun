@@ -10,7 +10,7 @@ public class WeaponManagerScript : MonoBehaviour
     //1 = Glitched gun    2= Rifle     3= RPG
     void Start()
     {
-        WeaponSelected = 1;
+        WeaponSelected = 0;
         LevelUnlocked = 1;
     }
 
