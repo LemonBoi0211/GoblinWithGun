@@ -17,7 +17,7 @@ public class WeaponManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (LevelUnlocked <= 1)
+       if (LevelUnlocked >= 1)
        { 
          if (Input.GetKey(KeyCode.Alpha1))
          {
@@ -25,7 +25,7 @@ public class WeaponManagerScript : MonoBehaviour
 
          }
        }
-        if (LevelUnlocked <= 2)
+        if (LevelUnlocked >= 2)
         {
             if (Input.GetKey(KeyCode.Alpha2))
             {
@@ -33,7 +33,7 @@ public class WeaponManagerScript : MonoBehaviour
             }
         }
 
-        if (LevelUnlocked <= 3)
+        if (LevelUnlocked >= 3)
         {
             if (Input.GetKey(KeyCode.Alpha3))
             {
