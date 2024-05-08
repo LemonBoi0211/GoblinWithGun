@@ -14,6 +14,8 @@ public class RifleGunScript : MonoBehaviour
     public float Timer; 
     public CollectableSystem AmmoScript;
     public bool IsFiring;
+    public AudioSource rifleSound;
+
     // Use this for initialization
     void Start()
     {
@@ -37,6 +39,7 @@ public class RifleGunScript : MonoBehaviour
                         Timer = 0.5f;
                         AmmoScript.RifleAmmo--;
                         IsFiring = true;
+                        rifleSound.Play();
                     }
                 }
             }
