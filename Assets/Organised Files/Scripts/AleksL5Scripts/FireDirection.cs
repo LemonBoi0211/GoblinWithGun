@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FireDirection : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
+    public Transform playerTransform;
     public float countdownTime = 10f;
     public float currentCountdown;
     GameObject Projectile;
@@ -14,12 +15,15 @@ public class FireDirection : MonoBehaviour
     void Awake()
     {
         Projectile = GameObject.FindGameObjectWithTag("WizardProjectile");
+
     }
 
     private void Start()
     {
         WizardAnimator.SetBool("IsFiring", false);
         currentCountdown = countdownTime;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player.GetComponent<Transform>();
     }
     void Update()
     {
@@ -39,7 +43,7 @@ public class FireDirection : MonoBehaviour
         }
 
 
-        transform.right = player.position - transform.position;
+        transform.right = playerTransform.position - transform.position;
       }
     }
 
