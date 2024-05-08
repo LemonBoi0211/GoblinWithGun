@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyWizardScript : MonoBehaviour
@@ -21,6 +22,7 @@ public class EnemyWizardScript : MonoBehaviour
     public GameObject consumableE;
     GameObject player;
     Transform playerTransform;
+    public bool CanMove = false;
 
     void Awake()
     {
@@ -60,8 +62,9 @@ public class EnemyWizardScript : MonoBehaviour
 
     void Update()
     {
-      
 
+      if (CanMove == true)
+      { 
         if (Health <= 0.1)
         {
             Destroy(gameObject);
@@ -91,7 +94,7 @@ public class EnemyWizardScript : MonoBehaviour
             }
             
         }
-
+        
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (playerTransform.position.x < transform.position.x)
@@ -102,7 +105,7 @@ public class EnemyWizardScript : MonoBehaviour
         {
             this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
         }
-
+      }
 
     }
     
@@ -136,8 +139,19 @@ public class EnemyWizardScript : MonoBehaviour
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
         }
-    }
 
+        if (other.CompareTag("MainCamera"))
+        {
+            CanMove = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("MainCamera"))
+        {
+            CanMove = false;
+        }
+    }
 }
 
 

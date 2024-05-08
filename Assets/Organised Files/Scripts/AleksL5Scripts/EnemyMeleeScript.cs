@@ -21,9 +21,14 @@ public class EnemyMeleeScript : MonoBehaviour
     GameObject consumableE;
     GameObject player;
     Transform playerTransform;
-
+    // LayerMask collisionLayer;
+    public bool CanMove = false;
+   
+    public bool RaycastSeePlayer = false;
     void Awake()
     {
+        
+      //  collisionLayer = LayerMask.NameToLayer("collisionLayer");
         rb = gameObject.GetComponent<Rigidbody2D>();
         Animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -63,7 +68,8 @@ public class EnemyMeleeScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+      if (CanMove == true)
+      { 
         if (playerTransform != null)
             {
                 float distance = Vector3.Distance(transform.position, playerTransform.position);
@@ -83,14 +89,15 @@ public class EnemyMeleeScript : MonoBehaviour
 
                     }
                 }
-            }
+        }
+      }
 
-         
 
-        
+
+
     }
-        private void OnTriggerEnter2D(Collider2D other)
-        {
+     private void OnTriggerEnter2D(Collider2D other)
+     {
             if (other.CompareTag("Bullet"))
             {
                Destroy(other.gameObject);
@@ -116,13 +123,45 @@ public class EnemyMeleeScript : MonoBehaviour
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
         }
-    }
 
-        private void Update()
+        if (other.CompareTag("MainCamera"))
         {
-         
+            CanMove = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("MainCamera"))
+        {
+            CanMove = false;
+        }
+    }
+    private void Update()
+     {
+    //    Vector2 direction = player.transform.position - transform.position;
+     //   RaycastHit2D hit;
 
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+     //   if (Physics2D.Raycast(transform.position, direction, 100f, collisionLayer))
+      //  {
+
+       //     hit = Physics2D.Raycast(transform.position, direction, 100f, collisionLayer);
+
+         //   if (hit.collider.gameObject == player)
+       //     {
+         //       Debug.Log("It works!");
+        //        RaycastSeePlayer = true;
+        //    }
+         //   else
+          //  {
+       //         Debug.Log("It doesn't work");
+       //         RaycastSeePlayer = false;
+       //     }
+
+    //        Debug.DrawRay(transform.position, direction, Color.red);
+   //     }
+
+
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (playerTransform.position.x < transform.position.x)
             {
@@ -163,7 +202,9 @@ public class EnemyMeleeScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-    }
+
+      
+     }
 
     void Hit()
         {

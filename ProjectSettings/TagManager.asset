@@ -28,7 +28,7 @@ TagManager:
   - Bullet
   - Collectables
   - DoNotInteractWithBullets
-  - 
+  - collisionLayer
   - 
   - 
   - 

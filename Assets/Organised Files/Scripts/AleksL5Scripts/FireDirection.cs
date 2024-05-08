@@ -10,11 +10,10 @@ public class FireDirection : MonoBehaviour
     GameObject Projectile;
     public Animator WizardAnimator;
     public float FireTime;
-
+    public EnemyWizardScript enemyWizardScript;
     void Awake()
     {
         Projectile = GameObject.FindGameObjectWithTag("WizardProjectile");
-
     }
 
     private void Start()
@@ -24,7 +23,8 @@ public class FireDirection : MonoBehaviour
     }
     void Update()
     {
-       
+      if (enemyWizardScript.CanMove == true)
+      { 
 
         if (currentCountdown > 0f)
         {
@@ -40,6 +40,7 @@ public class FireDirection : MonoBehaviour
 
 
         transform.right = player.position - transform.position;
+      }
     }
 
 
