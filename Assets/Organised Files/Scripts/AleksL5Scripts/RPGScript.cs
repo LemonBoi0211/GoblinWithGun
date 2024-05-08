@@ -13,6 +13,8 @@ public class RPGScript : MonoBehaviour
     public float Timer;
     public CollectableSystem AmmoScript;
     public bool IsFiring;
+    public AudioSource rocketSound;
+
     // Use this for initialization
     void Start()
     {
@@ -36,6 +38,7 @@ public class RPGScript : MonoBehaviour
                         Timer = 0.5f;
                         AmmoScript.RocketAmmo--;
                         IsFiring = true;
+                        rocketSound.Play();
                     }
                 }
             }

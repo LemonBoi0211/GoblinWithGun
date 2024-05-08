@@ -11,6 +11,7 @@ public class GlitchedGunScript : MonoBehaviour
     public WeaponManagerScript WeaponManagerScript;
     public SpriteRenderer Sprite;
     public bool IsFiring;
+    public AudioSource pistolSound;
 
     // Use this for initialization
     void Start()
@@ -36,6 +37,7 @@ public class GlitchedGunScript : MonoBehaviour
             {
                 Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
                 IsFiring = true;
+                pistolSound.Play();
             }
         }
         else
