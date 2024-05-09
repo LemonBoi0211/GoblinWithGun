@@ -603,6 +603,8 @@ MonoBehaviour:
   CanFire: 1
   Timer: 0
   AmmoScript: {fileID: 1203764171}
+  IsFiring: 0
+  rocketSound: {fileID: 0}
 --- !u!212 &103392885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1817,7 +1819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1037508424}
 --- !u!1 &242326709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +2344,8 @@ MonoBehaviour:
   CanFire: 1
   Timer: 0
   AmmoScript: {fileID: 1203764171}
+  IsFiring: 0
+  rifleSound: {fileID: 0}
 --- !u!212 &305533063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2986,7 +2989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1472574210}
 --- !u!1 &398475796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,7 +3021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1480363651}
 --- !u!114 &398475798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3677,11 +3678,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477407079}
   m_CullTransparentMesh: 1
---- !u!4 &519218230 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7837101288649849531, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
-  m_PrefabInstance: {fileID: 317874866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &519218231 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
@@ -6403,7 +6399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1877654465}
 --- !u!114 &860672943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6785,6 +6780,8 @@ MonoBehaviour:
   FirePoint: {fileID: 1107467126}
   WeaponManagerScript: {fileID: 542213005}
   Sprite: {fileID: 895595963}
+  IsFiring: 0
+  pistolSound: {fileID: 0}
 --- !u!212 &895595963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7116,7 +7113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1413619154}
 --- !u!1 &969565705
 GameObject:
   m_ObjectHideFlags: 0
@@ -7782,11 +7778,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1037508424 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
-  m_PrefabInstance: {fileID: 1810123198613261273}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1038503043
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,10 +8087,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 229432908}
+  playerTransform: {fileID: 0}
   countdownTime: 2
   currentCountdown: 0
   WizardAnimator: {fileID: 1472574211}
   FireTime: 0.5
+  enemyWizardScript: {fileID: 0}
 --- !u!1 &1084943975
 GameObject:
   m_ObjectHideFlags: 0
@@ -9625,11 +9618,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1413619154 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8519406265141876870, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
-  m_PrefabInstance: {fileID: 1694666054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1413619155 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 214465034675481849, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
@@ -10022,6 +10010,7 @@ MonoBehaviour:
   consumableC: {fileID: 1300347891575746889, guid: 4da90d194f3a23c4bb9b7b29b4a20554, type: 3}
   consumableD: {fileID: 8660140571892065185, guid: b149a2877ce64aa4783be7722594281f, type: 3}
   consumableE: {fileID: 8065601777810311164, guid: 88e1fbc86048b5240a525c6a31b27875, type: 3}
+  CanMove: 0
 --- !u!61 &1472574207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10237,11 +10226,6 @@ Transform:
   - {fileID: 749960991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1480363651 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
-  m_PrefabInstance: {fileID: 1790957065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1480363654 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
@@ -10318,7 +10302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 519218230}
 --- !u!114 &1487456050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10896,7 +10879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 229432908}
 --- !u!1 &1653625971
 GameObject:
   m_ObjectHideFlags: 0
@@ -12154,11 +12136,6 @@ Transform:
   - {fileID: 1957477089}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1877654465 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7837101288649849531, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
-  m_PrefabInstance: {fileID: 1441275747}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1877654469 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
