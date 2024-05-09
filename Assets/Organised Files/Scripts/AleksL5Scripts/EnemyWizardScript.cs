@@ -32,7 +32,6 @@ public class EnemyWizardScript : MonoBehaviour
         consumableA = GameObject.FindGameObjectWithTag("CollectableA");
         consumableB = GameObject.FindGameObjectWithTag("CollectableB");
         consumableC = GameObject.FindGameObjectWithTag("CollectableC");
-        consumableD = GameObject.FindGameObjectWithTag("CollectableD");
         consumableE = GameObject.FindGameObjectWithTag("CollectableE");
     }
 
@@ -45,7 +44,6 @@ public class EnemyWizardScript : MonoBehaviour
         consumables[0] = consumableA;
         consumables[1] = consumableB;
         consumables[2] = consumableC;
-        consumables[3] = consumableD;
         consumables[4] = consumableE;
 
 
@@ -70,7 +68,7 @@ public class EnemyWizardScript : MonoBehaviour
             Destroy(gameObject);
             Instantiate(consumables[4], transform.position, Quaternion.identity);
 
-            randonConsumable = Random.Range(6, 10);
+            randonConsumable = Random.Range(6, 9);
 
             if (randonConsumable <= 5)
             {
@@ -88,10 +86,7 @@ public class EnemyWizardScript : MonoBehaviour
             {
                 Instantiate(consumables[2], transform.position, Quaternion.identity);
             }
-            else if (randonConsumable == 9)
-            {
-                Instantiate(consumables[3], transform.position, Quaternion.identity);
-            }
+          
             
         }
         
