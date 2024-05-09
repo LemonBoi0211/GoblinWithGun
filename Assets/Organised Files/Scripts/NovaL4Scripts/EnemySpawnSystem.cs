@@ -8,7 +8,7 @@ public class EnemySpawnSystem : MonoBehaviour
     public GameObject[] randomEnemy;
     public int randomvar;
     
-    public int canSpawnCounter = 0;
+    
 
    
     // Start is called before the first frame update
@@ -16,26 +16,18 @@ public class EnemySpawnSystem : MonoBehaviour
     {
 
         Spawner();
-        StartCoroutine(Spawntimer());
+       
     }
 
-    private void Update()
-    {
-        Spawner();
-        Spawntimer();
-    }
+    
 
 
-    IEnumerator Spawntimer()
-    {
-        yield return new WaitForSecondsRealtime(5);
-    }
+   
 
     void Spawner()
     {
-        if (canSpawnCounter <= 5)
-        {
-            randomvar = Random.Range(1, 3);
+        
+            randomvar = Random.Range(1, 8);
 
             if (randomvar == 1)
             {
@@ -49,9 +41,25 @@ public class EnemySpawnSystem : MonoBehaviour
             {
                 Instantiate(randomEnemy[1], transform.position, Quaternion.identity);
             }
-            Debug.Log("wavespawned");
-            canSpawnCounter++;
-            Spawntimer();
+        else if (randomvar == 4)
+        {
+            Instantiate(randomEnemy[2], transform.position, Quaternion.identity);
         }
+        else if (randomvar == 5)
+        {
+            Instantiate(randomEnemy[3], transform.position, Quaternion.identity);
+        }
+        else if (randomvar == 6)
+        {
+            Instantiate(randomEnemy[4], transform.position, Quaternion.identity);
+        }
+        else if (randomvar == 7)
+        {
+            Instantiate(randomEnemy[5], transform.position, Quaternion.identity);
+        }
+        Debug.Log("spawned");
+            
+            
+        
     }
 }
