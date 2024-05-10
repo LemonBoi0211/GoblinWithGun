@@ -59,7 +59,7 @@ public class GunUIScript : MonoBehaviour
 
         if (IsAmmoText == true)
         {
-            if (weaponManagerScript.LevelUnlocked < 0)
+            if (weaponManagerScript.LevelUnlocked > 0)
             {
                 Text.color = new Color32(255, 255, 255, 255);
             }
