@@ -158,11 +158,11 @@ public class EnemyMeleeScript : MonoBehaviour
 
             if (playerTransform.position.x < transform.position.x)
             {
-                this.transform.localScale = new Vector3(-1.3f, 1.3f, 1.3f);
+                this.transform.localScale = new Vector3(-1.8f, 1.8f, 1.8f);
             }
             if (playerTransform.position.x >= transform.position.x)
             {
-                this.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+                this.transform.localScale = new Vector3(1.8f, 1.8f, 1.8f);
             }
 
 
