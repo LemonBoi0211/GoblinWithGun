@@ -112,7 +112,7 @@ public class EnemyWizardScript : MonoBehaviour
         if (other.tag == "Bullet")
         {
             Destroy(other.gameObject);
-            Health -= 0.2f;
+            Health -= 0.25f;
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         }
@@ -144,7 +144,7 @@ public class EnemyWizardScript : MonoBehaviour
     {
         if (other.CompareTag("MainCamera"))
         {
-            CanMove = false;
+     //       CanMove = false;
         }
     }
 }

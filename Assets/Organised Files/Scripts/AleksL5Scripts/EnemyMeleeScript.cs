@@ -6,8 +6,6 @@ public class EnemyMeleeScript : MonoBehaviour
 {
     public float Health = 1f;
     public float Speed = 5f;
-    public float knockbackForce = 10f;
-    public float knockbackForceRifle = 10f;
     public Rigidbody2D rb;
     public Animator Animator;
     public MeleeAreaOfAttackScript AttackScript;
@@ -46,7 +44,6 @@ public class EnemyMeleeScript : MonoBehaviour
 
 
         Health = 1f;
-        knockbackForce = knockbackForce * 2;
         consumables = new GameObject[5];
         consumables[0] = consumableA;
         consumables[1] = consumableB;
@@ -99,27 +96,25 @@ public class EnemyMeleeScript : MonoBehaviour
             if (other.CompareTag("Bullet"))
             {
                Destroy(other.gameObject);
-               Health -= 0.2f;            
-                Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
-                rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+               Health -= 0.25f;
+            Speed = 100f;
+            Invoke("ResetSpeed", 0.3f);
 
-            }
+        }
 
         if (other.CompareTag("BulletRifle"))
         {
             Destroy(other.gameObject);
             Health -= 0.5f;
-            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
-            rb.AddForce(knockbackDirection * knockbackForce , ForceMode2D.Impulse);
-
+            Speed = 100f;
+            Invoke("ResetSpeed", 0.3f);
         }
 
         if (other.CompareTag("Rocket"))
         {
             Health -= 0.4f;
-            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
-            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-
+            Speed = 100f;
+            Invoke("ResetSpeed", 0.3f);
         }
 
         if (other.CompareTag("MainCamera"))
@@ -131,7 +126,7 @@ public class EnemyMeleeScript : MonoBehaviour
     {
         if (other.CompareTag("MainCamera"))
         {
-            CanMove = false;
+           // CanMove = false;
         }
     }
     private void Update()
@@ -208,4 +203,9 @@ public class EnemyMeleeScript : MonoBehaviour
              PlayerHealthScript.Health -= 0.25f;
            }
         }
-   } 
+
+    void ResetSpeed()
+    {
+        Speed = 420f;
+    }
+} 
