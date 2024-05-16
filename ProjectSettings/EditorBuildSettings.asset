@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Organised Files/Scenes/JamieScene.unity
+    path: Assets/Organised Files/Scenes/Main menu.unity
     guid: c0a8690fe8ac293478f3edf5b81034d9
   - enabled: 1
     path: Assets/Organised Files/Scenes/CombinedFloor1.unity
