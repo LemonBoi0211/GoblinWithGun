@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyWizardScript : MonoBehaviour
@@ -22,7 +21,6 @@ public class EnemyWizardScript : MonoBehaviour
     public GameObject consumableE;
     GameObject player;
     Transform playerTransform;
-    public bool CanMove = false;
 
     void Awake()
     {
@@ -32,6 +30,7 @@ public class EnemyWizardScript : MonoBehaviour
         consumableA = GameObject.FindGameObjectWithTag("CollectableA");
         consumableB = GameObject.FindGameObjectWithTag("CollectableB");
         consumableC = GameObject.FindGameObjectWithTag("CollectableC");
+        consumableD = GameObject.FindGameObjectWithTag("CollectableD");
         consumableE = GameObject.FindGameObjectWithTag("CollectableE");
     }
 
@@ -44,6 +43,7 @@ public class EnemyWizardScript : MonoBehaviour
         consumables[0] = consumableA;
         consumables[1] = consumableB;
         consumables[2] = consumableC;
+        consumables[3] = consumableD;
         consumables[4] = consumableE;
 
 
@@ -60,15 +60,14 @@ public class EnemyWizardScript : MonoBehaviour
 
     void Update()
     {
+      
 
-      if (CanMove == true)
-      { 
         if (Health <= 0.1)
         {
             Destroy(gameObject);
             Instantiate(consumables[4], transform.position, Quaternion.identity);
 
-            randonConsumable = Random.Range(6, 9);
+            randonConsumable = Random.Range(6, 10);
 
             if (randonConsumable <= 5)
             {
@@ -86,21 +85,24 @@ public class EnemyWizardScript : MonoBehaviour
             {
                 Instantiate(consumables[2], transform.position, Quaternion.identity);
             }
-          
+            else if (randonConsumable == 9)
+            {
+                Instantiate(consumables[3], transform.position, Quaternion.identity);
+            }
             
         }
-        
+
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (playerTransform.position.x < transform.position.x)
         {
-            this.transform.localScale = new Vector3(-1.8f, 1.8f, 1.8f);
+            this.transform.localScale = new Vector3(-1.2f, 1.2f, 1.2f);
         }
         if (playerTransform.position.x >= transform.position.x)
         {
-            this.transform.localScale = new Vector3(1.8f, 1.8f, 1.8f);
+            this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
         }
-      }
+
 
     }
     
@@ -112,7 +114,7 @@ public class EnemyWizardScript : MonoBehaviour
         if (other.tag == "Bullet")
         {
             Destroy(other.gameObject);
-            Health -= 0.25f;
+            Health -= 0.2f;
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         }
@@ -134,19 +136,8 @@ public class EnemyWizardScript : MonoBehaviour
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
         }
+    }
 
-        if (other.CompareTag("MainCamera"))
-        {
-            CanMove = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-     //       CanMove = false;
-        }
-    }
 }
 
 

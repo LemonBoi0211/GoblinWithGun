@@ -5,28 +5,23 @@ using static UnityEngine.GraphicsBuffer;
 
 public class CanvasScript : MonoBehaviour
 {
-   
-    private Transform parentTransform;
-    private Vector3 originalScale;
-
+    public Transform Target;
     void Start()
     {
-    
-        parentTransform = transform.parent;
-        originalScale = transform.localScale;
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (parentTransform.localScale.x < 0)
+        if (Target != null)
         {
-            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
-        }
-        else
-        {
-            transform.localScale = originalScale;
+            this.transform.position = Target.position;
         }
 
-       transform.position = parentTransform.position;
+        if (Target == null)
+        {
+            Destroy(gameObject);
+        }
     }
 }
