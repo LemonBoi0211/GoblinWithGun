@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Organised Files/Scenes/CombinedFloor1.unity
     guid: f0bf860ae4e99e344bda2a54f6c95155
+  - enabled: 1
+    path: Assets/Organised Files/Scenes/DeathScreen.unity
+    guid: 3f4824de284c01b4299518fab91b58c3
   m_configObjects: {}
