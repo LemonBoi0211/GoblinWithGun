@@ -12,7 +12,8 @@ public class GlitchedGunScript : MonoBehaviour
     public SpriteRenderer Sprite;
     public bool IsFiring;
     public AudioSource pistolSound;
-
+    public bool CanFire = true;
+    public float Timer;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +23,9 @@ public class GlitchedGunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Timer -= Time.deltaTime;
+
         if (WeaponManagerScript.WeaponSelected== 1)
         {
          //Look a mouse
@@ -32,12 +36,15 @@ public class GlitchedGunScript : MonoBehaviour
          float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
          transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
          Sprite.enabled = true;
-
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (CanFire == true)
             {
-                Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
-                IsFiring = true;
-                pistolSound.Play();
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
+                    Timer = 0.3f;
+                    IsFiring = true;
+                    pistolSound.Play();
+                }
             }
         }
         else
@@ -46,8 +53,15 @@ public class GlitchedGunScript : MonoBehaviour
         }
 
 
-      
-      
+        if (Timer > 0)
+        {
+            CanFire = false;
+        }
+        else
+        {
+            CanFire = true;
+        }
+
 
         this.transform.position = Player.position;
     }

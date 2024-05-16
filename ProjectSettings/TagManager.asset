@@ -17,6 +17,9 @@ TagManager:
   - WizardEnemy
   - MeleeEnemy
   - WizardProjectile
+  - TrapDoor
+  - TrapDoor2
+  - TrapDoor3
   layers:
   - Default
   - TransparentFX
@@ -28,7 +31,7 @@ TagManager:
   - Bullet
   - Collectables
   - DoNotInteractWithBullets
-  - 
+  - collisionLayer
   - 
   - 
   - 

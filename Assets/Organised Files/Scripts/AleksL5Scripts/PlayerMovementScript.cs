@@ -30,11 +30,11 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (mousePosition.x < transform.position.x)
         {
-            Player.localScale = new Vector3(-1.7f, 1.7f, 1.7f);
+            Player.localScale = new Vector3(-2f, 2f, 2f);
         }
         if (mousePosition.x >= transform.position.x)
         {
-            Player.localScale = new Vector3(1.7f, 1.7f, 1.7f);
+            Player.localScale = new Vector3(2f, 2f, 2f);
         }
     }
 }
