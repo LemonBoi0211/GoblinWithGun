@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Organised Files/Scenes/Jamie Tutorial.unity.meta
 guid: f0bf860ae4e99e344bda2a54f6c95155
+========
+guid: 0db9503bf64b1ed46bd3ae5e2a4b9bb7
+>>>>>>>> parent of e8886d7 (Merge branch 'main' of https://github.com/LemonBoi0211/GoblinWithGun):Assets/Organised Files/Scenes/Jamie.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

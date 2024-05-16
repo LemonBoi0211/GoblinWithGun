@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Organised Files/Scenes/Combined.unity.meta
 guid: addd502046a84d7449613519ea6ec4f0
+========
+guid: 1062317031a91e6499b580e24a47d9c3
+>>>>>>>> parent of e8886d7 (Merge branch 'main' of https://github.com/LemonBoi0211/GoblinWithGun):Assets/Organised Files/Scenes/AleksScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
