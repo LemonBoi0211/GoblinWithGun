@@ -19,6 +19,8 @@ public class EnemyMeleeScript : MonoBehaviour
     GameObject consumableE;
     GameObject player;
     Transform playerTransform;
+    public bool CanDropRifleAmmo;
+    public bool CanDropRocketAmmo;
     // LayerMask collisionLayer;
     public bool CanMove = false;
    
@@ -181,11 +183,17 @@ public class EnemyMeleeScript : MonoBehaviour
             }
             else if (randonConsumable == 7)
             {
-                Instantiate(consumables[1], transform.position, Quaternion.identity);
+                if (CanDropRifleAmmo == true)
+                { 
+                 Instantiate(consumables[1], transform.position, Quaternion.identity);
+                }
             }
             else if (randonConsumable == 8)
             {
-                Instantiate(consumables[2], transform.position, Quaternion.identity);
+                if (CanDropRocketAmmo == true)
+                {
+                    Instantiate(consumables[2], transform.position, Quaternion.identity);
+                }
             }
          
             Destroy(gameObject);
