@@ -13,22 +13,27 @@ public class CollectableSystem : MonoBehaviour
     public Text collectableEText;
     public int RifleAmmo = 5;
     public int RocketAmmo = 5;
+    public AudioSource healthSound;
+    public AudioSource ammo;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CollectableA"))
         {  
             currentHP.Health = 1f;
+            healthSound.Play();
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableB"))
         {
-            RifleAmmo++;        
+            RifleAmmo++;    
+            ammo.Play();
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableC"))
         {
-            RocketAmmo++;    
+            RocketAmmo++;  
+            ammo.Play();
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableD"))
