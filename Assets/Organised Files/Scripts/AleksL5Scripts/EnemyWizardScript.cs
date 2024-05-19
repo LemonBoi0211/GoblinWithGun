@@ -23,12 +23,17 @@ public class EnemyWizardScript : MonoBehaviour
     GameObject player;
     Transform playerTransform;
     public bool CanMove = false;
+    public GameObject DeathSoundGameobject;
+    public AudioSource DeathSound;
+    public GameObject deathParticles;
 
     void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.GetComponent<Transform>();
+        DeathSoundGameobject = GameObject.FindGameObjectWithTag("DeathSound");
+        DeathSound = DeathSoundGameobject.GetComponent<AudioSource>();
         consumableA = GameObject.FindGameObjectWithTag("CollectableA");
         consumableB = GameObject.FindGameObjectWithTag("CollectableB");
         consumableC = GameObject.FindGameObjectWithTag("CollectableC");
@@ -63,10 +68,12 @@ public class EnemyWizardScript : MonoBehaviour
 
       if (CanMove == true)
       { 
-        if (Health <= 0.1)
+        if (Health <= 0.1f)
         {
+            DeathSound.Play();
             Destroy(gameObject);
-            Instantiate(consumables[4], transform.position, Quaternion.identity);
+                Instantiate(deathParticles, transform.position, Quaternion.identity);
+                Instantiate(consumables[4], transform.position, Quaternion.identity);
 
             randonConsumable = Random.Range(6, 9);
 
@@ -140,13 +147,7 @@ public class EnemyWizardScript : MonoBehaviour
             CanMove = true;
         }
     }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-     //       CanMove = false;
-        }
-    }
+
 }
 
 

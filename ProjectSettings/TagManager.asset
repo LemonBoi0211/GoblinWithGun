@@ -20,6 +20,8 @@ TagManager:
   - TrapDoor
   - TrapDoor2
   - TrapDoor3
+  - ExplosionSound
+  - DeathSound
   layers:
   - Default
   - TransparentFX

@@ -23,8 +23,10 @@ public class EnemyMeleeScript : MonoBehaviour
     public bool CanDropRocketAmmo;
     // LayerMask collisionLayer;
     public bool CanMove = false;
-   
- //   public bool RaycastSeePlayer = false;
+    public GameObject DeathSoundGameobject;
+    public AudioSource DeathSound;
+    public GameObject deathParticles;
+    //   public bool RaycastSeePlayer = false;
     void Awake()
     {
         
@@ -33,6 +35,8 @@ public class EnemyMeleeScript : MonoBehaviour
         Animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.GetComponent<Transform>();
+        DeathSoundGameobject = GameObject.FindGameObjectWithTag("DeathSound");
+        DeathSound = DeathSoundGameobject.GetComponent<AudioSource>();
         PlayerHealthScript = player.GetComponent<PlayerHealthScript>();
         consumableA = GameObject.FindGameObjectWithTag("CollectableA");
         consumableB = GameObject.FindGameObjectWithTag("CollectableB");
@@ -195,8 +199,10 @@ public class EnemyMeleeScript : MonoBehaviour
                     Instantiate(consumables[2], transform.position, Quaternion.identity);
                 }
             }
-         
+            DeathSound.Play();
+            Instantiate(deathParticles, transform.position, Quaternion.identity);
             Destroy(gameObject);
+
         }
 
 
