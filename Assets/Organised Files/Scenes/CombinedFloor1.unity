@@ -204,6 +204,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -215,6 +219,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -510,6 +518,94 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+--- !u!1 &29384814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29384815}
+  - component: {fileID: 29384816}
+  m_Layer: 5
+  m_Name: HealthBar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &29384815
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29384814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.1, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1835649802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.4600003, y: 2.2699997}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &29384816
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29384814}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 7482667652216324306, guid: e32892653a353a048aa6b26a2097b2b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &43412398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8519406265141876870, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
@@ -580,9 +676,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -802,9 +906,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -8722,9 +8834,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -9332,9 +9452,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -9594,9 +9722,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -10171,9 +10307,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -11281,9 +11425,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -11363,9 +11515,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -16586,9 +16746,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -17814,9 +17982,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -18194,6 +18370,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -18205,6 +18385,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -18321,9 +18505,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -19307,6 +19499,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -19318,6 +19514,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -26476,9 +26676,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -26565,6 +26773,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1657161094}
   m_SourcePrefab: {fileID: 100100000, guid: 411cdc79334a8fc4da54fc19b5a0e3ce, type: 3}
+--- !u!1 &857371721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857371722}
+  - component: {fileID: 857371724}
+  - component: {fileID: 857371723}
+  m_Layer: 9
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &857371722
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857371721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.043877237, y: 0.046802387, z: 0.046802387}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2091650277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 28.72876, y: -11.85}
+  m_SizeDelta: {x: 549.13, y: 67.555}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &857371723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857371721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4339623, g: 0.20265219, b: 0.38758913, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &857371724
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857371721}
+  m_CullTransparentMesh: 1
 --- !u!1 &862210614
 GameObject:
   m_ObjectHideFlags: 0
@@ -27014,6 +27297,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873134782}
+  m_CullTransparentMesh: 1
+--- !u!1 &877002253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877002254}
+  - component: {fileID: 877002256}
+  - component: {fileID: 877002255}
+  m_Layer: 9
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &877002254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.043877237, y: 0.046802387, z: 0.046802387}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2091650277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 23.05, y: -11.98}
+  m_SizeDelta: {x: 238.124, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &877002255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Global chat: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_sharedMaterial: {fileID: 1335809400806743061, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -26.083855, y: 0, z: -274.99893, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &877002256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002253}
   m_CullTransparentMesh: 1
 --- !u!4 &886642946 stripped
 Transform:
@@ -27765,9 +28182,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -29174,9 +29599,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -29959,9 +30392,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -31943,6 +32384,140 @@ Transform:
   - {fileID: 216363660}
   m_Father: {fileID: 1873789637}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1143124273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143124274}
+  - component: {fileID: 1143124276}
+  - component: {fileID: 1143124275}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1143124274
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143124273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2723266, y: 1.2031456, z: 1.2031456}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1835649802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.44, y: 1.655}
+  m_SizeDelta: {x: 1.3647, y: 0.7425}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1143124275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143124273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Goblin
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281808695
+  m_fontColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.7
+  m_fontSizeBase: 0.7
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -7.4593244, y: 0, z: -6.899685, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1143124276
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143124273}
+  m_CullTransparentMesh: 1
 --- !u!4 &1146613836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
@@ -32029,6 +32604,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -32040,6 +32619,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -32290,6 +32873,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -32301,6 +32888,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -150.22609
@@ -32413,6 +33004,17 @@ MonoBehaviour:
   pointB: {fileID: 1838887705}
   trapdoor: TrapDoor2
   speed: 1000
+--- !u!114 &1203764185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5692189937731943175, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
+  m_PrefabInstance: {fileID: 7456352676634296273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667698865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fbf0084816db940ac275f379ae36fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1206012173
 GameObject:
   m_ObjectHideFlags: 0
@@ -32651,7 +33253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.090029255}
+  m_AnchoredPosition: {x: -0.017, y: 0.125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1224524447
@@ -32790,9 +33392,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -32847,6 +33457,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -32858,6 +33472,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -150.22609
@@ -33091,9 +33709,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.39998
@@ -33950,6 +34576,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -33961,6 +34591,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -34005,9 +34639,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.39998
@@ -34346,9 +34988,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -34449,6 +35099,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -34460,6 +35114,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -35415,9 +36073,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.39998
@@ -36446,7 +37112,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.043877237, y: 0.046802387, z: 0.046802387}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2064991092}
   m_Father: {fileID: 2091650277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -37552,9 +38219,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -38250,9 +38925,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -38348,6 +39031,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -38359,6 +39046,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -38523,6 +39214,123 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2121847237}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1835649801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1835649802}
+  - component: {fileID: 1835649806}
+  - component: {fileID: 1835649805}
+  - component: {fileID: 1835649804}
+  - component: {fileID: 1835649803}
+  m_Layer: 5
+  m_Name: Canvas Enemy (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1835649802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835649801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.30749527, y: 0.30235645, z: 0.37855393}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1143124274}
+  - {fileID: 2000812187}
+  - {fileID: 29384815}
+  m_Father: {fileID: 229432908}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.005, y: -0.139}
+  m_SizeDelta: {x: 19.142, y: 9.6248}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1835649803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835649801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d232e850a5b6845bdf685cf900c868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1835649804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835649801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1835649805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835649801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &1835649806
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835649801}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 10
+  m_TargetDisplay: 0
 --- !u!1 &1835766992
 GameObject:
   m_ObjectHideFlags: 0
@@ -40977,9 +41785,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -41274,9 +42090,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -41578,9 +42402,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -41661,6 +42493,109 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+--- !u!1 &2000812186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000812187}
+  - component: {fileID: 2000812189}
+  - component: {fileID: 2000812188}
+  m_Layer: 5
+  m_Name: HealthBar (HealthBarScript)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2000812187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000812186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1835649802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.4104264, y: 2.270002}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2000812188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000812186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c8872b6b4cec84f8056f3be068ce87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHealthScript: {fileID: 1203764185}
+  Size: {fileID: 2000812187}
+--- !u!212 &2000812189
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000812186}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 7482667652216324306, guid: e32892653a353a048aa6b26a2097b2b8, type: 3}
+  m_Color: {r: 0.509434, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &2009886463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7837101288649849531, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
@@ -41910,9 +42845,17 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.39998
@@ -42043,6 +42986,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 118956552}
   m_SourcePrefab: {fileID: 100100000, guid: d51734cca5793b349acd607cd9bb22af, type: 3}
+--- !u!1 &2064991091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064991092}
+  - component: {fileID: 2064991094}
+  - component: {fileID: 2064991093}
+  m_Layer: 9
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2064991092
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064991091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1579103162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1416.18, y: -649.81}
+  m_SizeDelta: {x: 549.13, y: 238.76}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2064991093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064991091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4716981, g: 0.42052332, b: 0.45988855, a: 0.74509805}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2064991094
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064991091}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2065017612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42068,6 +43086,10 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -42079,6 +43101,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 4358294405762042764, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -150.22609
@@ -47146,7 +48172,9 @@ RectTransform:
   - {fileID: 563151939}
   - {fileID: 989777237}
   - {fileID: 1579103162}
+  - {fileID: 857371722}
   - {fileID: 1290850601}
+  - {fileID: 877002254}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -47789,6 +48817,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 262185072}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
@@ -47800,6 +48832,10 @@ PrefabInstance:
       propertyPath: knockbackForceRifle
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: DeathSoundGameobject
+      value: 
+      objectReference: {fileID: 262185070}
     - target: {fileID: 8733602783284771797, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_LinearDrag
       value: 10
@@ -48048,7 +49084,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4574234686143380863, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835649802}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8776254394497733241, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
       insertIndex: -1

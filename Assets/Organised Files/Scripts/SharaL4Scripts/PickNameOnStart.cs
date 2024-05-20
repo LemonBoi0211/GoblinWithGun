@@ -21,7 +21,7 @@ public class PickNameOnStart : MonoBehaviour
             "LiquidSnake",
             "TobyTheMinion",
             "MichaelDontLeaveMeHere",
-            "c+ereal_killer",
+            "cereal_killer",
             "Girl_Gamer23",
             "Fiat_Earther",
             "The'Special'Forces",
