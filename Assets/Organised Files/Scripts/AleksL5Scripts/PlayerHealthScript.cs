@@ -12,7 +12,7 @@ public class PlayerHealthScript : MonoBehaviour
         if (Health <= 0)
         {
             Debug.Log("Dead");
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }
