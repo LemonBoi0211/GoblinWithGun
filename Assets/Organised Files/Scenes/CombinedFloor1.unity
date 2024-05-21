@@ -129,7 +129,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -458,7 +458,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -468,6 +468,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 133.43605
@@ -617,7 +625,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -683,6 +691,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -847,7 +863,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -913,6 +929,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -1655,7 +1679,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1665,6 +1689,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 158.20308
@@ -1900,7 +1928,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1910,6 +1938,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 128.84683
@@ -2497,7 +2529,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2507,6 +2539,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 158.2553
@@ -7508,7 +7548,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7956,6 +7996,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574234686143380863, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
   m_PrefabInstance: {fileID: 7456352676634296273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &230978457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230978458}
+  m_Layer: 0
+  m_Name: Floor 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230978458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230978457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 332922613}
+  - {fileID: 949247257}
+  - {fileID: 738526537}
+  - {fileID: 889013756}
+  - {fileID: 1342485604}
+  - {fileID: 2009886463}
+  - {fileID: 652831672}
+  - {fileID: 106434767}
+  - {fileID: 976267844}
+  - {fileID: 13955820}
+  - {fileID: 1784975279}
+  - {fileID: 200653255}
+  - {fileID: 213118870}
+  - {fileID: 1461913096}
+  - {fileID: 585634365}
+  - {fileID: 1259465424}
+  - {fileID: 1983466658}
+  - {fileID: 1611471410}
+  - {fileID: 283877695}
+  - {fileID: 1557523188}
+  - {fileID: 1400457300}
+  - {fileID: 1332066933}
+  - {fileID: 386437060}
+  m_Father: {fileID: 975832338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &231817740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8775,7 +8869,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -8842,6 +8936,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -8865,7 +8963,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8911,6 +9009,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -9092,7 +9198,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9102,6 +9208,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 128.07217
@@ -9393,7 +9507,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9460,6 +9574,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -9483,7 +9605,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9529,6 +9651,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -9600,6 +9730,64 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00afe2f93c462fc47a1e715c698d2aa7, type: 3}
+--- !u!1 &312667670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312667671}
+  m_Layer: 0
+  m_Name: Floor 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312667671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312667670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 864777304}
+  - {fileID: 572998845}
+  - {fileID: 43412398}
+  - {fileID: 990090254}
+  - {fileID: 444710761}
+  - {fileID: 148623228}
+  - {fileID: 2069576348}
+  - {fileID: 1648079775}
+  - {fileID: 91073189}
+  - {fileID: 1616903703}
+  - {fileID: 140415102}
+  - {fileID: 1000600575}
+  - {fileID: 1420372886}
+  - {fileID: 543884210}
+  - {fileID: 998938613}
+  - {fileID: 1146613836}
+  - {fileID: 496235941}
+  - {fileID: 975392954}
+  - {fileID: 720482008}
+  - {fileID: 323728507}
+  - {fileID: 78487708}
+  - {fileID: 186454111}
+  - {fileID: 681526961}
+  - {fileID: 1427877183}
+  - {fileID: 943040109}
+  - {fileID: 1133773763}
+  - {fileID: 1305900593}
+  m_Father: {fileID: 975832338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &312776882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9663,7 +9851,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9729,6 +9917,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -10248,7 +10444,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10338,7 +10534,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10348,6 +10544,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 174.97874
@@ -10404,7 +10608,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10414,6 +10618,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 101.02491
@@ -11073,7 +11285,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11366,7 +11578,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -11433,6 +11645,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -11456,7 +11672,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -11522,6 +11738,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -16687,7 +16911,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -16754,6 +16978,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -16777,7 +17005,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalScale.x
@@ -16869,7 +17097,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16879,6 +17107,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 172.71497
@@ -17923,7 +18155,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -17989,6 +18221,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -18295,7 +18531,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -18446,7 +18682,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -18512,6 +18748,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -19185,7 +19429,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -19195,6 +19439,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 127.945915
@@ -19424,7 +19672,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -25853,7 +26101,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -25863,6 +26111,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 162.58429
@@ -26617,7 +26869,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -26683,6 +26935,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -27583,7 +27843,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -27593,6 +27853,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 133.28423
@@ -28119,7 +28387,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1144841009195516288, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -28190,6 +28458,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -28241,81 +28513,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 332922613}
-  - {fileID: 949247257}
-  - {fileID: 738526537}
-  - {fileID: 889013756}
-  - {fileID: 1342485604}
-  - {fileID: 2009886463}
-  - {fileID: 652831672}
-  - {fileID: 106434767}
-  - {fileID: 976267844}
-  - {fileID: 13955820}
-  - {fileID: 1784975279}
-  - {fileID: 200653255}
-  - {fileID: 213118870}
-  - {fileID: 1461913096}
-  - {fileID: 585634365}
-  - {fileID: 1259465424}
-  - {fileID: 1983466658}
-  - {fileID: 1611471410}
-  - {fileID: 283877695}
-  - {fileID: 1557523188}
-  - {fileID: 1400457300}
-  - {fileID: 864777304}
-  - {fileID: 572998845}
-  - {fileID: 43412398}
-  - {fileID: 990090254}
-  - {fileID: 444710761}
-  - {fileID: 148623228}
-  - {fileID: 2069576348}
-  - {fileID: 1648079775}
-  - {fileID: 91073189}
-  - {fileID: 1616903703}
-  - {fileID: 140415102}
-  - {fileID: 1000600575}
-  - {fileID: 1420372886}
-  - {fileID: 543884210}
-  - {fileID: 998938613}
-  - {fileID: 1332066933}
-  - {fileID: 386437060}
-  - {fileID: 1146613836}
-  - {fileID: 496235941}
-  - {fileID: 975392954}
-  - {fileID: 720482008}
-  - {fileID: 323728507}
-  - {fileID: 78487708}
-  - {fileID: 186454111}
-  - {fileID: 681526961}
-  - {fileID: 1427877183}
-  - {fileID: 943040109}
-  - {fileID: 1133773763}
-  - {fileID: 1305900593}
-  - {fileID: 1876839789}
-  - {fileID: 1083659072}
-  - {fileID: 83898739}
-  - {fileID: 293054948}
-  - {fileID: 1125726039}
-  - {fileID: 1772599233}
-  - {fileID: 1248899093}
-  - {fileID: 1675985266}
-  - {fileID: 168166772}
-  - {fileID: 917136645}
-  - {fileID: 1708376781}
-  - {fileID: 1039291206}
-  - {fileID: 89819064}
-  - {fileID: 1200142137}
-  - {fileID: 202748794}
-  - {fileID: 886642946}
-  - {fileID: 581398943}
-  - {fileID: 1808129923}
-  - {fileID: 1662520328}
-  - {fileID: 621433723}
-  - {fileID: 481229448}
-  - {fileID: 1584241797}
-  - {fileID: 703410710}
-  - {fileID: 1985859584}
-  - {fileID: 1933759413}
+  - {fileID: 230978458}
+  - {fileID: 312667671}
+  - {fileID: 1766954210}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &976267844 stripped
@@ -28329,7 +28529,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3567877094780548676, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: countdownTime
@@ -29458,7 +29658,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalScale.x
@@ -29540,7 +29740,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -29606,6 +29806,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -30333,7 +30537,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -30569,7 +30773,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -31415,7 +31619,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -31425,6 +31629,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 134.66968
@@ -32529,7 +32737,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -32850,7 +33058,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -33151,7 +33359,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33161,6 +33369,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 164.0007
@@ -33309,7 +33521,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33319,6 +33531,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 129.23691
@@ -33380,7 +33600,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33447,6 +33667,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -33481,7 +33705,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -33605,7 +33829,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33615,6 +33839,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 134.37105
@@ -33671,7 +33903,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33717,6 +33949,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -33737,7 +33973,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -33763,6 +33999,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -34482,7 +34726,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34528,6 +34772,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -34548,7 +34796,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -34667,7 +34915,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -34693,6 +34941,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -34976,7 +35228,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -35043,6 +35295,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -35071,7 +35331,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -35495,7 +35755,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -35505,6 +35765,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.08898
@@ -35691,7 +35955,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -35701,6 +35965,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 157.95474
@@ -36101,7 +36373,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -36127,6 +36399,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -37654,7 +37930,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalScale.x
@@ -38263,7 +38539,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -38329,6 +38605,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -38800,6 +39084,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 164678547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766954209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766954210}
+  m_Layer: 0
+  m_Name: Floor3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1766954210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766954209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1876839789}
+  - {fileID: 1083659072}
+  - {fileID: 83898739}
+  - {fileID: 293054948}
+  - {fileID: 1125726039}
+  - {fileID: 1772599233}
+  - {fileID: 1248899093}
+  - {fileID: 1675985266}
+  - {fileID: 168166772}
+  - {fileID: 917136645}
+  - {fileID: 1708376781}
+  - {fileID: 1039291206}
+  - {fileID: 89819064}
+  - {fileID: 1200142137}
+  - {fileID: 202748794}
+  - {fileID: 886642946}
+  - {fileID: 581398943}
+  - {fileID: 1808129923}
+  - {fileID: 1662520328}
+  - {fileID: 621433723}
+  - {fileID: 481229448}
+  - {fileID: 1584241797}
+  - {fileID: 703410710}
+  - {fileID: 1985859584}
+  - {fileID: 1933759413}
+  m_Father: {fileID: 975832338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1772599233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7837101288649849531, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
@@ -38816,7 +39156,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -38826,6 +39166,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.148796
@@ -38882,7 +39226,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -38969,7 +39313,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -39036,6 +39380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -39059,7 +39407,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -39173,7 +39521,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39219,6 +39567,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -41520,7 +41872,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -41763,7 +42115,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41809,6 +42161,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -41829,7 +42189,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -41896,6 +42256,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -41924,7 +42292,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -41934,6 +42302,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388588537472459009, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 164.33879
@@ -41990,7 +42366,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42036,6 +42412,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -42056,7 +42436,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 3725441232402673750, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -42134,7 +42514,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -42200,6 +42580,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8497744705228584427, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -42446,7 +42830,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 3109092710421308398, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: m_Name
@@ -42513,6 +42897,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423352823}
     - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497744705228584427, guid: 1b7ee4b986104a94399a2f5064fca3f6, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
       objectReference: {fileID: 262185070}
@@ -42536,7 +42924,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 375495806902848726, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42582,6 +42970,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 5147615558575654784, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626611359276908306, guid: 8e1471c9fbc232a4f9549b09de0b2095, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -208.40002
@@ -42929,7 +43321,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 1766954210}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -42955,6 +43347,14 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
+      propertyPath: CanDropRocketAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2081734546333713782, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: DeathSoundGameobject
       value: 
@@ -43170,7 +43570,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1053565472730157268, guid: c99da905ff6b124488b611cafe0c2080, type: 3}
       propertyPath: m_Name
@@ -48120,7 +48520,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 312667671}
     m_Modifications:
     - target: {fileID: 2231034239267728643, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -48130,6 +48530,10 @@ PrefabInstance:
       propertyPath: deathParticles
       value: 
       objectReference: {fileID: 423352823}
+    - target: {fileID: 6388588537472459009, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
+      propertyPath: CanDropRifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6547890855593170891, guid: 253e1b125e154074388bcebc8f82e63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 138.94449
@@ -48851,7 +49255,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 975832338}
+    m_TransformParent: {fileID: 230978458}
     m_Modifications:
     - target: {fileID: 1960368912141871005, guid: 50e22d867bf226049bd1283bfaae7ed6, type: 3}
       propertyPath: m_AnchoredPosition.x
