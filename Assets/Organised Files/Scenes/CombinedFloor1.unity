@@ -10078,8 +10078,8 @@ MonoBehaviour:
   m_text: "*Cough* It was the players..There are rumors of a portal they use to access
     the dungeon. \nStop them!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
-  m_sharedMaterial: {fileID: 1335809400806743061, guid: 3afad475a47e1634a93234d81d8fa16a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10139,7 +10139,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -7.6872697, y: 0.16583613, z: 5.226289, w: 0}
+  m_margin: {x: -7.5693955, y: -0.010827128, z: 5.2498636, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
