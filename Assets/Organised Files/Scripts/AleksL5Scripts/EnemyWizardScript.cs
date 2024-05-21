@@ -26,6 +26,8 @@ public class EnemyWizardScript : MonoBehaviour
     public GameObject DeathSoundGameobject;
     public AudioSource DeathSound;
     public GameObject deathParticles;
+    public bool CanDropRifleAmmo;
+    public bool CanDropRocketAmmo;
 
     void Awake()
     {
@@ -67,37 +69,41 @@ public class EnemyWizardScript : MonoBehaviour
     {
 
       if (CanMove == true)
-      { 
-        if (Health <= 0.1f)
-        {
-            DeathSound.Play();
-            Destroy(gameObject);
-                Instantiate(deathParticles, transform.position, Quaternion.identity);
+      {
+            if (Health <= 0.1)
+            {
                 Instantiate(consumables[4], transform.position, Quaternion.identity);
+                randonConsumable = Random.Range(6, 9);
 
-            randonConsumable = Random.Range(6, 9);
+                if (randonConsumable <= 5)
+                {
 
-            if (randonConsumable <= 5)
-            {
+                }
+                else if (randonConsumable == 6)
+                {
+                    Instantiate(consumables[0], transform.position, Quaternion.identity);
+                }
+                else if (randonConsumable == 7)
+                {
+                    if (CanDropRifleAmmo == true)
+                    {
+                        Instantiate(consumables[1], transform.position, Quaternion.identity);
+                    }
+                }
+                else if (randonConsumable == 8)
+                {
+                    if (CanDropRocketAmmo == true)
+                    {
+                        Instantiate(consumables[2], transform.position, Quaternion.identity);
+                    }
+                }
+                DeathSound.Play();
+                Instantiate(deathParticles, transform.position, Quaternion.identity);
+                Destroy(gameObject);
 
             }
-            else if (randonConsumable == 6)
-            {
-                Instantiate(consumables[0], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 7)
-            {
-                Instantiate(consumables[1], transform.position, Quaternion.identity);
-            }
-            else if (randonConsumable == 8)
-            {
-                Instantiate(consumables[2], transform.position, Quaternion.identity);
-            }
-          
-            
-        }
-        
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (playerTransform.position.x < transform.position.x)
         {
