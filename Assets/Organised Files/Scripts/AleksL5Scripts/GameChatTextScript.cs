@@ -44,6 +44,10 @@ public class GameChatTextScript : MonoBehaviour
             "Todd_Coward: Goblins seem too easy to kill tbh",
              "Todd_Coward: Gj man",
              "GoblinKiller64: Go to www.NotAScam.com for free Gamebux",
+             "Kipper: I see no god here exepct only me!",
+             "HowlinWolf: Dude needs a chill pill.",
+             "HowlinWolf: OMG your that guy from that thing.",
+
         };
 
     public int Position;
@@ -70,15 +74,15 @@ public class GameChatTextScript : MonoBehaviour
     {
         if (Position == 1)
         {
-            Transform.anchoredPosition = new Vector2(23.12576f, -20.9f);
+            Transform.anchoredPosition = new Vector2(13.91f, -20.9f);
         }
         if (Position == 2)
         {
-            Transform.anchoredPosition = new Vector2(23.12576f, -18.18f);
+            Transform.anchoredPosition = new Vector2(13.91f, -18.31f);
         }
         if (Position == 3)
         {
-            Transform.anchoredPosition = new Vector2(23.12576f, -15.29f);
+            Transform.anchoredPosition = new Vector2(13.91f, -15.79f);
         }
         if (Position == 4)
         {

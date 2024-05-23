@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -14,7 +14,7 @@ public class PickNameOnStart : MonoBehaviour
             "TheAngloLithuanian",
             "GoblinKiller64",
             "XxNoobSlayerxX",
-            "Lieutenant_Dan",
+            "Lt_Dan_With_Legs",
             "6_shots_1Kill",
             "MarioFart",
             "LiquidSnake",
@@ -46,12 +46,14 @@ public class PickNameOnStart : MonoBehaviour
             "Zinger_Burger",
             "MyPingHigh",
             "VintageTanks",
-            "TheDarkerNight",
-            "oliverpickup12",
+            "TheDarkerKnight",
+            "翻译句子",
             "DiscordLover",
             "I_AmUrFather",
             "Todd_Coward",
-            "SmallLoneOf1Mil$"
+            "SmallLoneOf1Mil$",
+            "HowlinWolf",
+            "Kipper",
         };
 
     void Start()
