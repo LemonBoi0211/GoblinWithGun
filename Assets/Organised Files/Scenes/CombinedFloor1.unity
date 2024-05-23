@@ -8637,11 +8637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2420388089666246739, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 160.95
+      value: 160.9
       objectReference: {fileID: 0}
     - target: {fileID: 2420388089666246739, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -34.66
+      value: -35.46
       objectReference: {fileID: 0}
     - target: {fileID: 2420388089666246739, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49214,6 +49214,18 @@ PrefabInstance:
       propertyPath: WeaponManagerScript
       value: 
       objectReference: {fileID: 542213005}
+    - target: {fileID: 1359263823652871668, guid: ed1b3ec1a2e12d8488724abb2ec0341c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359263823652871668, guid: ed1b3ec1a2e12d8488724abb2ec0341c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359263823652871668, guid: ed1b3ec1a2e12d8488724abb2ec0341c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.14509805
+      objectReference: {fileID: 0}
     - target: {fileID: 2779868055015811384, guid: ed1b3ec1a2e12d8488724abb2ec0341c, type: 3}
       propertyPath: m_Name
       value: RocketLauncher
