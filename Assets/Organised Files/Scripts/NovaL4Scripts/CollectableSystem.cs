@@ -15,6 +15,7 @@ public class CollectableSystem : MonoBehaviour
     public int RocketAmmo = 5;
     public AudioSource healthSound;
     public AudioSource ammo;
+    public AudioSource PickUpGun;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,6 +30,10 @@ public class CollectableSystem : MonoBehaviour
             RifleAmmo++;    
             ammo.Play();
             Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("GunPickUp"))
+        {
+            PickUpGun.Play();
         }
         else if (other.CompareTag("CollectableC"))
         {

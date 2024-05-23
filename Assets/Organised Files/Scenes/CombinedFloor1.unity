@@ -785,6 +785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchedGun ItemPickUp
       objectReference: {fileID: 0}
+    - target: {fileID: 8419698389173912632, guid: fa0d988fd9d721946b70ed34ca7ba493, type: 3}
+      propertyPath: m_TagString
+      value: GunPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1397,6 +1401,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6547890855593170891, guid: 8d614a1151ab570478cb3270b77f8013, type: 3}
   m_PrefabInstance: {fileID: 979241861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &108335188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108335189}
+  - component: {fileID: 108335190}
+  m_Layer: 0
+  m_Name: GunPickUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108335189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108335188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 661679515}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &108335190
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108335188}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: df814aa476f93d64e8b6c59a347f4998, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &114426215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,6 +8848,10 @@ PrefabInstance:
     - target: {fileID: 6159511938057763902, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159511938057763902, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
+      propertyPath: m_TagString
+      value: GunPickUp
       objectReference: {fileID: 0}
     - target: {fileID: 6182474590351094536, guid: 0f7d31c486c2d204991a30564ac6b52a, type: 3}
       propertyPath: weaponManagerScript
@@ -18673,6 +18809,7 @@ Transform:
   - {fileID: 1712086506}
   - {fileID: 1309212537}
   - {fileID: 675553871}
+  - {fileID: 108335189}
   - {fileID: 262185071}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49439,6 +49576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiflePickUp
       objectReference: {fileID: 0}
+    - target: {fileID: 4502559796592796661, guid: cb2c7e8c938128d4aad25e926b323413, type: 3}
+      propertyPath: m_TagString
+      value: GunPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -49539,6 +49680,10 @@ PrefabInstance:
       propertyPath: ammo
       value: 
       objectReference: {fileID: 675553872}
+    - target: {fileID: 4443957433113704144, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
+      propertyPath: PickUpGun
+      value: 
+      objectReference: {fileID: 108335190}
     - target: {fileID: 4443957433113704144, guid: eec6b410aebf359498981a00eec2d9d9, type: 3}
       propertyPath: healthSound
       value: 

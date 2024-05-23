@@ -23,6 +23,7 @@ TagManager:
   - ExplosionSound
   - DeathSound
   - ChatManager
+  - GunPickUp
   layers:
   - Default
   - TransparentFX
