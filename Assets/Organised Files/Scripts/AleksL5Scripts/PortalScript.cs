@@ -10,7 +10,7 @@ public class PortalScript : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 

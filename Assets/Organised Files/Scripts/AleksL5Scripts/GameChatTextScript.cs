@@ -61,7 +61,6 @@ public class GameChatTextScript : MonoBehaviour
 
         int maxSize = gamerTags.Length;
         string selectedName = gamerTags[Random.Range(0, maxSize)];
-        Debug.Log(selectedName);
 
         nameText.text = selectedName;
     }
