@@ -16,6 +16,8 @@ public class CollectableSystem : MonoBehaviour
     public AudioSource healthSound;
     public AudioSource ammo;
 
+    public RifleGunScript rifleAmmo;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CollectableA"))
@@ -28,6 +30,7 @@ public class CollectableSystem : MonoBehaviour
         {
             RifleAmmo++;    
             ammo.Play();
+            rifleAmmo.needMOBullets = false;
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("CollectableC"))

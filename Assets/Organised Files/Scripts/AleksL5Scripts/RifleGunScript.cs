@@ -15,6 +15,8 @@ public class RifleGunScript : MonoBehaviour
     public CollectableSystem AmmoScript;
     public bool IsFiring;
     public AudioSource rifleSound;
+    public AudioSource riflePing;
+    public bool needMOBullets = false;
 
     // Use this for initialization
     void Start()
@@ -29,9 +31,9 @@ public class RifleGunScript : MonoBehaviour
      
         if (WeaponManagerScript.WeaponSelected == 2)
         {
-            if (AmmoScript.RifleAmmo > 0)
+            if (CanFire == true && !needMOBullets)
             {
-                if (CanFire == true)
+                if  (AmmoScript.RifleAmmo > 0)
                 {
                     if (Input.GetKeyDown(KeyCode.Mouse0))
                     {
@@ -42,11 +44,16 @@ public class RifleGunScript : MonoBehaviour
                         rifleSound.Play();
                     }
                 }
+                else
+                {
+                    Timer = 0.5f;
+                    riflePing.Play();
+                    needMOBullets = true;
+                }
             }
-            else
-            {
-                Timer = 0.5f;
-            }
+            
+
+
                 //Look a mouse
                 Vector3 mousePos = Input.mousePosition;
             Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
@@ -56,11 +63,7 @@ public class RifleGunScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             Sprite.enabled = true;
 
-            
-
-       
             this.transform.position = Player.position;
-
         }
         else
         {
