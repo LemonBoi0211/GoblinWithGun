@@ -71,15 +71,15 @@ public class GameChatTextScript : MonoBehaviour
     {
         if (Position == 1)
         {
-            Transform.anchoredPosition = new Vector2(-33.39f, -20.9f);
+            Transform.anchoredPosition = new Vector2(23.12576f, -20.9f);
         }
         if (Position == 2)
         {
-            Transform.anchoredPosition = new Vector2(-33.39f, -18.18f);
+            Transform.anchoredPosition = new Vector2(23.12576f, -18.18f);
         }
         if (Position == 3)
         {
-            Transform.anchoredPosition = new Vector2(-33.39f, -15.29f);
+            Transform.anchoredPosition = new Vector2(23.12576f, -15.29f);
         }
         if (Position == 4)
         {
