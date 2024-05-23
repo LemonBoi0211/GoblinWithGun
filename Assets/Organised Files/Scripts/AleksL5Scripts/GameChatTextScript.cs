@@ -47,6 +47,8 @@ public class GameChatTextScript : MonoBehaviour
              "Kipper: I see no god here exepct only me!",
              "HowlinWolf: Dude needs a chill pill.",
              "HowlinWolf: OMG your that guy from that thing.",
+             "Gimpanzee: **********!",
+             "Gimpanzee: *Monke noises*",
 
         };
 
