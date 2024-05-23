@@ -15,6 +15,7 @@ public class CollectableSystem : MonoBehaviour
     public int RocketAmmo = 5;
     public AudioSource healthSound;
     public AudioSource ammo;
+    public AudioSource PickUpGun;
 
     public RifleGunScript rifleAmmo;
 
@@ -32,6 +33,10 @@ public class CollectableSystem : MonoBehaviour
             ammo.Play();
             rifleAmmo.needMOBullets = false;
             Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("GunPickUp"))
+        {
+            PickUpGun.Play();
         }
         else if (other.CompareTag("CollectableC"))
         {
