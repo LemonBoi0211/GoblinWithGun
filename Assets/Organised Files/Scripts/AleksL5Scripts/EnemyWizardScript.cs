@@ -51,7 +51,7 @@ public class EnemyWizardScript : MonoBehaviour
         consumables[0] = consumableA;
         consumables[1] = consumableB;
         consumables[2] = consumableC;
-        consumables[4] = consumableE;
+       // consumables[4] = consumableE;
 
 
         foreach (GameObject obj in consumables)
@@ -72,7 +72,7 @@ public class EnemyWizardScript : MonoBehaviour
       {
             if (Health <= 0.1)
             {
-                Instantiate(consumables[4], transform.position, Quaternion.identity);
+               // Instantiate(consumables[4], transform.position, Quaternion.identity);
                 randonConsumable = Random.Range(6, 9);
 
                 if (randonConsumable <= 5)
