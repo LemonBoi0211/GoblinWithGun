@@ -8,6 +8,7 @@ public class ExplosionScript : MonoBehaviour
     public GameObject Camera;
     public AudioSource explosion;
     public GameObject explosionGameObject;
+    public GameObject Light;
     private void Awake()
     {
         Camera = GameObject.FindWithTag("MainCamera");
@@ -21,6 +22,7 @@ public class ExplosionScript : MonoBehaviour
         CameraShakeScript.shakeDuration = 0.1f;
         CameraShakeScript.rotationIntensity = 3f;
         Destroy(gameObject, 0.3f);
+        Instantiate(Light, transform.position, transform.rotation);
     }
 
     // Update is called once per frame

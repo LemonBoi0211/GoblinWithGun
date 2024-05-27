@@ -7,9 +7,14 @@ public class BulletScript : MonoBehaviour
     public float speed = 20f;
     public bool IsRocket;
     public GameObject Explosion;
+    public GameObject Light;
     void Start()
     {
 
+    }
+    private void Awake()
+    {
+        Instantiate(Light, transform.position, transform.rotation);
     }
 
     // Update is called once per frame

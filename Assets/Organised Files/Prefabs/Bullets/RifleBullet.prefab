@@ -103,6 +103,7 @@ MonoBehaviour:
   speed: 15
   IsRocket: 0
   Explosion: {fileID: 0}
+  Light: {fileID: 157249174072487950, guid: a95fd19fd5e6a2b459630e4bd9986cf5, type: 3}
 --- !u!50 &3465130373977996939
 Rigidbody2D:
   serializedVersion: 4
