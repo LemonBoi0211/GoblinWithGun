@@ -21,7 +21,7 @@ public class ExplosionScript : MonoBehaviour
         explosion.Play();
         CameraShakeScript.shakeDuration = 0.1f;
         CameraShakeScript.rotationIntensity = 3f;
-        Destroy(gameObject, 0.3f);
+        Destroy(gameObject, 0.15f);
         Instantiate(Light, transform.position, transform.rotation);
     }
 

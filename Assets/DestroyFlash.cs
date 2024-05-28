@@ -17,6 +17,6 @@ public class DestroyFlash : MonoBehaviour
     }
     private void Awake()
     {
-        Destroy(gameObject, 0.1f);
+        Destroy(gameObject, 0.15f);
     }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7490051769230069529}
   - component: {fileID: 7699000346271113222}
   - component: {fileID: 7642521643697548526}
-  - component: {fileID: 6405194656303059152}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Rocket
@@ -121,20 +120,6 @@ CircleCollider2D:
   m_Offset: {x: -0.009598942, y: 0}
   serializedVersion: 2
   m_Radius: 0.7126608
---- !u!114 &6405194656303059152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694038542559236936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25170529658ec2740975737ad650d966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CameraShakeScript: {fileID: 0}
-  Camera: {fileID: 0}
 --- !u!1 &6072221157609459412
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,3 +256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraShakeScript: {fileID: 0}
   Camera: {fileID: 0}
+  explosion: {fileID: 0}
+  explosionGameObject: {fileID: 0}
+  Light: {fileID: 157249174072487950, guid: a95fd19fd5e6a2b459630e4bd9986cf5, type: 3}
